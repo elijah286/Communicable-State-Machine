@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>Communicable State Machine.lvlib:Add State(s) to Queue By BOOL++.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Communicable State Machine.lvlib:Add State_s_ to Queue By BOOL__.vi"></A><H2>Communicable State Machine.lvlib:Add State(s) to Queue By BOOL++.vi</H2>
+<P>Merges CSM message strings into the CSM message queue. This VI provides string options for both TRUE and FALSE states, avoiding the use of case structures and improving code readability and programming efficiency.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;CSM State Queue Operation API&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; This type of API only concatenates message strings and does not send messages directly. The message is sent and the operation executed within the Parse State Queue++ VI. Unlike the Message Building API, this type of API includes a CSM state queue string input, which is equivalent to inserting a message into the state queue.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;Polymorphic VI Options&lt;/b&gt;</P>
+<P>&gt; - Add State(s) to Queue By BOOL(Element).vi</P>
+<P>&gt; - Add State(s) to Queue By BOOL(Array Left).vi</P>
+<P>&gt; - Add State(s) to Queue By BOOL(Array Right).vi</P>
+<P>&gt; - Add State(s) to Queue By BOOL(Array All).vi</P>
+<P></P>
+<P>### Add State(s) to Queue By BOOL(Element).vi</P>
+<P>Merges CSM message strings into the CSM message queue. This VI provides string options for both TRUE and FALSE states, avoiding the use of Case Structures and improving code readability and programming efficiency.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;CSM State Queue Operation API&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; This type of API only concatenates message strings and does not send messages directly. The message is sent and the operation executed within the Parse State Queue++ VI. Unlike the Message Building API, this type of API includes a CSM state queue string input, which is equivalent to inserting a message into the state queue.</P>
+<P></P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;: The entire state queue is connected to this input.</P>
+<P>- &lt;b&gt;Condition&lt;/b&gt;: Selects the state string connected to the TRUE or FALSE terminal.</P>
+<P>- &lt;b&gt;High Priority? (F)&lt;/b&gt;: If TRUE, the state is inserted at the front of the &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;. If FALSE, the state is appended to the end.</P>
+<P>- &lt;b&gt;TRUE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is TRUE.</P>
+<P>- &lt;b&gt;FALSE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is FALSE.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Remaining States&lt;/b&gt;: Returns all concatenated states and arguments.</P>
+<P></P>
+<P>### Add State(s) to Queue By BOOL(Array Left).vi</P>
+<P>Merges CSM message strings into the CSM message queue. This VI provides string options for both TRUE and FALSE states, avoiding the use of case structures and improving code readability and programming efficiency.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;CSM State Queue Operation API&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; This type of API only concatenates message strings and does not send messages directly. The message is sent and the operation executed within the Parse State Queue++ VI. Unlike the Message Building API, this type of API includes a CSM state queue string input, which is equivalent to inserting a message into the state queue.</P>
+<P></P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;: The entire state queue is connected to this input.</P>
+<P>- &lt;b&gt;Condition&lt;/b&gt;: Selects the state string connected to the TRUE or FALSE terminal.</P>
+<P>- &lt;b&gt;High Priority? (F)&lt;/b&gt;: If TRUE, the state is inserted at the front of the &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;. If FALSE, the state is appended to the end.</P>
+<P>- &lt;b&gt;TRUE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is TRUE.</P>
+<P>- &lt;b&gt;FALSE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is FALSE.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Remaining States&lt;/b&gt;: Returns all concatenated states and arguments.</P>
+<P></P>
+<P>### Add State(s) to Queue By BOOL(Array Right).vi</P>
+<P>Merges CSM message strings into the CSM message queue. This VI provides string options for both TRUE and FALSE states, avoiding the use of case structures and improving code readability and programming efficiency.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;CSM State Queue Operation API&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; This type of API only concatenates message strings and does not send messages directly. The message is sent and the operation executed within the Parse State Queue++ VI. Unlike the Message Building API, this type of API includes a CSM state queue string input, which is equivalent to inserting a message into the state queue.</P>
+<P></P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;: The entire state queue is connected to this input.</P>
+<P>- &lt;b&gt;Condition&lt;/b&gt;: Selects the state string connected to the TRUE or FALSE terminal.</P>
+<P>- &lt;b&gt;High Priority? (F)&lt;/b&gt;: If TRUE, the state is inserted at the front of the &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;. If FALSE, the state is appended to the end.</P>
+<P>- &lt;b&gt;TRUE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is TRUE.</P>
+<P>- &lt;b&gt;FALSE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is FALSE.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Remaining States&lt;/b&gt;: Returns all concatenated states and arguments.</P>
+<P></P>
+<P>### Add State(s) to Queue By BOOL(Array All).vi</P>
+<P>Generates the concatenated state of TRUE/FALSE and the remaining states based on the &lt;b&gt;High Priority&lt;/b&gt; and Boolean inputs. The &lt;b&gt;High Priority&lt;/b&gt; input determines whether to concatenate the TRUE or FALSE string before or after the remaining states. The &lt;b&gt;TRUE&lt;/b&gt; and &lt;b&gt;FALSE&lt;/b&gt; inputs determine whether the string to be concatenated is TRUE or FALSE.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;CSM State Queue Operation API&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; This type of API only concatenates message strings and does not send messages directly. The message is sent and the operation executed within the Parse State Queue++ VI. Unlike the Message Building API, this type of API includes a CSM state queue string input, which is equivalent to inserting a message into the state queue.</P>
+<P></P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;: The entire state queue is connected to this input.</P>
+<P>- &lt;b&gt;Condition&lt;/b&gt;: Selects the state string connected to the TRUE or FALSE terminal.</P>
+<P>- &lt;b&gt;High Priority? (F)&lt;/b&gt;: If TRUE, the state is inserted at the front of the &lt;b&gt;State Queue (&quot;&quot;)&lt;/b&gt;. If FALSE, the state is appended to the end.</P>
+<P>- &lt;b&gt;TRUE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is TRUE.</P>
+<P>- &lt;b&gt;FALSE (&quot;&quot;)&lt;/b&gt;: The state string to insert when &lt;b&gt;Condition&lt;/b&gt; is FALSE.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Remaining States&lt;/b&gt;: Returns all concatenated states and arguments.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:Add State(s) to Queue By BOOL++.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAA1ElEQVQ4T5XTvQ2EMAwF4NcwSUoKBkudAViDAVJ5AQbIAgyDEELK2eS4y88lcE9CiuxP2CkCbGMjG7hvGmHR7LN4ANCMgH3fYfh8HMfnA1ek/gUmAyYFMi0BUvjrD+0dbm8B5/jkva8BN8+O+8jEsiQAKEGPeETejwHK/vJOAFojzwV6AVopXU6QEZw2AKojUC5Zpr8DZyJAZC1RfEgB0cThBtHQdcMlIjCdYcB9EV/gJbABWNjujI2AUuoBaI0IoLrkGnb4fc115Me7opo1PO/m838BumpDW42ZrSIAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Array All).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Array All).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\_Polymophic\Add State(s) to Queue By BOOL(Array All).vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAA1ElEQVQ4T5XTvQ2EMAwF4NcwSUoKBkudAViDAVJ5AQbIAgyDEELK2eS4y88lcE9CiuxP2CkCbGMjG7hvGmHR7LN4ANCMgH3fYfh8HMfnA1ek/gUmAyYFMi0BUvjrD+0dbm8B5/jkva8BN8+O+8jEsiQAKEGPeETejwHK/vJOAFojzwV6AVopXU6QEZw2AKojUC5Zpr8DZyJAZC1RfEgB0cThBtHQdcMlIjCdYcB9EV/gJbABWNjujI2AUuoBaI0IoLrkGnb4fc115Me7opo1PO/m838BumpDW42ZrSIAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Array Left).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Array Left).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\_Polymophic\Add State(s) to Queue By BOOL(Array Left).vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAA1ElEQVQ4T5XTvQ2EMAwF4NcwSUoKBkudAViDAVJ5AQbIAgyDEELK2eS4y88lcE9CiuxP2CkCbGMjG7hvGmHR7LN4ANCMgH3fYfh8HMfnA1ek/gUmAyYFMi0BUvjrD+0dbm8B5/jkva8BN8+O+8jEsiQAKEGPeETejwHK/vJOAFojzwV6AVopXU6QEZw2AKojUC5Zpr8DZyJAZC1RfEgB0cThBtHQdcMlIjCdYcB9EV/gJbABWNjujI2AUuoBaI0IoLrkGnb4fc115Me7opo1PO/m838BumpDW42ZrSIAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Element).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Element).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\_Polymophic\Add State(s) to Queue By BOOL(Element).vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAA1ElEQVQ4T5XTvQ2EMAwF4NcwSUoKBkudAViDAVJ5AQbIAgyDEELK2eS4y88lcE9CiuxP2CkCbGMjG7hvGmHR7LN4ANCMgH3fYfh8HMfnA1ek/gUmAyYFMi0BUvjrD+0dbm8B5/jkva8BN8+O+8jEsiQAKEGPeETejwHK/vJOAFojzwV6AVopXU6QEZw2AKojUC5Zpr8DZyJAZC1RfEgB0cThBtHQdcMlIjCdYcB9EV/gJbABWNjujI2AUuoBaI0IoLrkGnb4fc115Me7opo1PO/m838BumpDW42ZrSIAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Array Right).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:Add State(s) to Queue By BOOL(Array Right).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\_Polymophic\Add State(s) to Queue By BOOL(Array Right).vi</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;Communicable State Machine.lvlib:Add State(s) to Queue By BOOL++.vi History&quot;</P>
+<P>Current Revision:   42</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:Add State(s) to Queue By BOOL++.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

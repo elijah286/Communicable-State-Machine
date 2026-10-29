@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<TITLE>Communicable State Machine.lvlib:CSM Data Type String to Enum.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Communicable State Machine.lvlib:CSM Data Type String to Enum.vi"></A><H2>Communicable State Machine.lvlib:CSM Data Type String to Enum.vi</H2>
+<P>Converts a data type description string into a LabVIEW-defined data type enum.</P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;Polymorphic VI Options&lt;/b&gt;</P>
+<P>&gt; - CSM Data Type String to Enum(String).vi</P>
+<P>&gt; - CSM Data Type String to Enum(TypeEnum).vi</P>
+<P>&gt; - CSM Data Type String to Enum(RefnumEnum).vi</P>
+<P></P>
+<P>#### CSM Data Type String to Enum(String).vi</P>
+<P>Converts a data type description string into a LabVIEW-defined data type enum, with the subtype described as a string.</P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Data Type String&lt;/b&gt;: Input data type description string.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Primary Type&lt;/b&gt;: Data type enum.</P>
+<P>- &lt;b&gt;Secondary Type String&lt;/b&gt;: If the input is a complex data type, returns the subtype string, such as the element type in an array data type.</P>
+<P>- &lt;b&gt;Array Dim&lt;/b&gt;: If the input is an array data type, returns the array dimensions.</P>
+<P></P>
+<P>#### CSM Data Type String to Enum(TypeEnum).vi</P>
+<P>Converts a data type description string into a LabVIEW-defined data type enum and returns the array subtype using an enum.</P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Data Type String&lt;/b&gt;: Input data type description string.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Primary Type&lt;/b&gt;: Data type enum.</P>
+<P>- &lt;b&gt;Secondary Type String&lt;/b&gt;: Array subtype enum.</P>
+<P>- &lt;b&gt;Array Dim&lt;/b&gt;: If the input is an array data type, returns the array dimensions.</P>
+<P></P>
+<P>#### CSM Data Type String to Enum(RefnumEnum).vi</P>
+<P>Converts a data type description string into a LabVIEW-defined data type enum and returns the refnum subtype using an enum.</P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Data Type String&lt;/b&gt;: Input data type description string.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;Primary Type&lt;/b&gt;: Data type enum.</P>
+<P>- &lt;b&gt;Secondary Type String&lt;/b&gt;: Refnum subtype enum.</P>
+<P>- &lt;b&gt;Array Dim&lt;/b&gt;: If the input is an array data type, returns the array dimensions.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:CSM Data Type String to Enum.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAg0lEQVQ4T+2SwQnAIAxFM0luGaqDdACHcwGHEY/9SWsQwVB68NRHQet/fFsIUUsBjZCfATDCHMYLQUL2CTyelREVmCdh3FsDBEgqimQTSre8gdjyDDS1pwsWPsK6wa8QXZmtyr9hogv+FyvBXr4IB9By2SjU2RipCUMbGPUe63jsf4wLuCLphl0PfqYAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:CSM Data Type String to Enum(RefnumEnum).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:CSM Data Type String to Enum(RefnumEnum).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\Utility\_support\CSM Data Type String to Enum(RefnumEnum).vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAg0lEQVQ4T+2SwQnAIAxFM0luGaqDdACHcwGHEY/9SWsQwVB68NRHQet/fFsIUUsBjZCfATDCHMYLQUL2CTyelREVmCdh3FsDBEgqimQTSre8gdjyDDS1pwsWPsK6wa8QXZmtyr9hogv+FyvBXr4IB9By2SjU2RipCUMbGPUe63jsf4wLuCLphl0PfqYAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:CSM Data Type String to Enum(String).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:CSM Data Type String to Enum(String).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\Utility\_support\CSM Data Type String to Enum(String).vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAg0lEQVQ4T+2SwQnAIAxFM0luGaqDdACHcwGHEY/9SWsQwVB68NRHQet/fFsIUUsBjZCfATDCHMYLQUL2CTyelREVmCdh3FsDBEgqimQTSre8gdjyDDS1pwsWPsK6wa8QXZmtyr9hogv+FyvBXr4IB9By2SjU2RipCUMbGPUe63jsf4wLuCLphl0PfqYAAAAASUVORK5CYII=" ALT="Communicable State Machine.lvlib:CSM Data Type String to Enum(TypeEnum).vi"></P>
+</TD>
+<TD>
+<B><P>Communicable State Machine.lvlib:CSM Data Type String to Enum(TypeEnum).vi</P>
+</B><P>C:\wt\6d1581f7b84ced8fe13668ae280fabdd06ef2687\src\user.lib\_NEVSTOP\Communicable State Machine(CSM)\Utility\_support\CSM Data Type String to Enum(TypeEnum).vi</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;Communicable State Machine.lvlib:CSM Data Type String to Enum.vi History&quot;</P>
+<P>Current Revision:   20</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:CSM Data Type String to Enum.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

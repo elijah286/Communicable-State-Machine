@@ -1,0 +1,818 @@
+[
+  {
+    "sha": "6d1581f7b84ced8fe13668ae280fabdd06ef2687",
+    "short": "6d1581f",
+    "message": "Dev2025Q4 (#536)",
+    "author": "NEVSTOP",
+    "date": "2026-01-26T11:28:30+08:00",
+    "vi_count": 1106
+  },
+  {
+    "sha": "bec192df5c07dc819c583e4508b622e63a024c53",
+    "short": "bec192d",
+    "message": "Dev 202509 (#500)",
+    "author": "NEVSTOP",
+    "date": "2025-09-28T11:34:11+08:00",
+    "vi_count": 828
+  },
+  {
+    "sha": "73a64aa1be5b3d553ba8e893298a32ec97dcc2ba",
+    "short": "73a64aa",
+    "message": "Dev202508 (#493)",
+    "author": "NEVSTOP",
+    "date": "2025-08-26T13:37:05+08:00",
+    "vi_count": 800
+  },
+  {
+    "sha": "508e741ebf3562fd226b733cf7eb295fd51720c2",
+    "short": "508e741",
+    "message": "Dev202507 (#480)",
+    "author": "NEVSTOP",
+    "date": "2025-07-30T14:38:36+08:00",
+    "vi_count": 799
+  },
+  {
+    "sha": "7d423b9024d397299908eb4882f8af818a09caf5",
+    "short": "7d423b9",
+    "message": "Squashed commit of the following:",
+    "author": "NEVSTOP",
+    "date": "2025-07-02T10:25:04+08:00",
+    "vi_count": 785
+  },
+  {
+    "sha": "23f63f5da0f8058c74381e57cf81cfc2cd04b29f",
+    "short": "23f63f5",
+    "message": "quick fix for CSM - Running Log - DebugTool.vi",
+    "author": "NEVSTOP",
+    "date": "2025-06-02T00:31:21+08:00",
+    "vi_count": 759
+  },
+  {
+    "sha": "798500819239c6d29dc005c49cb0919212e09f43",
+    "short": "7985008",
+    "message": "Dev202505 (#451)",
+    "author": "NEVSTOP",
+    "date": "2025-05-29T18:11:37+08:00",
+    "vi_count": 759
+  },
+  {
+    "sha": "3bf082055cdb1693a12ddd59c6cac0f11e9d4713",
+    "short": "3bf0820",
+    "message": "fix poping up VI path",
+    "author": "NEVSTOP",
+    "date": "2025-04-28T23:01:23+08:00",
+    "vi_count": 711
+  },
+  {
+    "sha": "afc6b9f3ba8d5ecd7fb1e749301b1573b2b1da08",
+    "short": "afc6b9f",
+    "message": "fix bug in CSM - Module Exit Event.vi",
+    "author": "NEVSTOP",
+    "date": "2025-04-28T21:57:49+08:00",
+    "vi_count": 711
+  },
+  {
+    "sha": "948bd4aeefa509910fb57c3323515a06a2ecf9a0",
+    "short": "948bd4a",
+    "message": "Dev202504 (#434)",
+    "author": "NEVSTOP",
+    "date": "2025-04-28T16:30:48+08:00",
+    "vi_count": 711
+  },
+  {
+    "sha": "2fb645d9cf36c8ab2925ddbf9dcdbd674a16652d",
+    "short": "2fb645d",
+    "message": "Dev202503 (#397)",
+    "author": "NEVSTOP",
+    "date": "2025-03-29T10:07:57+08:00",
+    "vi_count": 667
+  },
+  {
+    "sha": "7f789467167ea1eb93dd5225f8cb5f5d86db94ce",
+    "short": "7f78946",
+    "message": "Dev202502 (#376)",
+    "author": "NEVSTOP",
+    "date": "2025-02-27T20:03:27+08:00",
+    "vi_count": 596
+  },
+  {
+    "sha": "3e3f7a44644278182b4e8fc8fe653c9d3c1046ae",
+    "short": "3e3f7a4",
+    "message": "Dev202501 (#356)",
+    "author": "NEVSTOP",
+    "date": "2025-01-26T17:10:42+08:00",
+    "vi_count": 611
+  },
+  {
+    "sha": "54d2cb52d6ec9df14ff632a8c2cb3a40444c5a2b",
+    "short": "54d2cb5",
+    "message": "Dev202412 (#346)",
+    "author": "NEVSTOP",
+    "date": "2024-12-30T18:04:23+08:00",
+    "vi_count": 590
+  },
+  {
+    "sha": "dc0a58ef6cd3ecfb8f6a3dc1971ec3eb0b76d17e",
+    "short": "dc0a58e",
+    "message": "Dev202411-2: [important] Periodic States/Log will automatically be filtered in Template/DebugTools/Examples (#338)",
+    "author": "NEVSTOP",
+    "date": "2024-11-25T21:33:41+08:00",
+    "vi_count": 577
+  },
+  {
+    "sha": "091d190b818d7282251091b9e56bdaebd62e6d7e",
+    "short": "091d190",
+    "message": "Dev202411-1 (#336)",
+    "author": "NEVSTOP",
+    "date": "2024-11-15T17:38:53+08:00",
+    "vi_count": 560
+  },
+  {
+    "sha": "f5bca925cb619555ef6e07b372775a5476cc18b3",
+    "short": "f5bca92",
+    "message": "Dev202410 (#324)",
+    "author": "NEVSTOP",
+    "date": "2024-11-08T13:05:15+08:00",
+    "vi_count": 558
+  },
+  {
+    "sha": "3a7d42844349e7b1009de7c1b3a22193adbe62df",
+    "short": "3a7d428",
+    "message": "Dev202409 (#303)",
+    "author": "NEVSTOP",
+    "date": "2024-09-28T11:40:56+08:00",
+    "vi_count": 547
+  },
+  {
+    "sha": "0983df08c8571b2f76c517d6a59620b3c5066c61",
+    "short": "0983df0",
+    "message": "Dev202408 (#292)",
+    "author": "NEVSTOP",
+    "date": "2024-08-29T22:03:32+08:00",
+    "vi_count": 463
+  },
+  {
+    "sha": "0e5c4a94efc22c4cd1b0c235d9a903d8f0d7d1e7",
+    "short": "0e5c4a9",
+    "message": "Dev202407 (#283)",
+    "author": "NEVSTOP",
+    "date": "2024-07-29T22:24:50+08:00",
+    "vi_count": 354
+  },
+  {
+    "sha": "1d33b0ef0248d0509293e7845cf9fea5caf6e0bc",
+    "short": "1d33b0e",
+    "message": "Dev202406 (#279)",
+    "author": "NEVSTOP",
+    "date": "2024-06-30T22:26:16+08:00",
+    "vi_count": 347
+  },
+  {
+    "sha": "50e88a18e11b3205fa223458bf789a8be56152bf",
+    "short": "50e88a1",
+    "message": "Dev202405 (#267)",
+    "author": "NEVSTOP",
+    "date": "2024-05-30T23:56:42+08:00",
+    "vi_count": 346
+  },
+  {
+    "sha": "8510dce51f16dd9af57a6059555d90ce0a573ae2",
+    "short": "8510dce",
+    "message": "Dev202404 (#263)",
+    "author": "NEVSTOP",
+    "date": "2024-04-30T11:11:47+08:00",
+    "vi_count": 313
+  },
+  {
+    "sha": "4128ecf3b7200a8248edd481d0d35c57e26fefdc",
+    "short": "4128ecf",
+    "message": "Dev202403 (#261)",
+    "author": "NEVSTOP",
+    "date": "2024-03-29T13:42:55+08:00",
+    "vi_count": 293
+  },
+  {
+    "sha": "8f135923ac69bdb2db32042746d9db8d593f2fa6",
+    "short": "8f13592",
+    "message": "Dev20240301 (#255)",
+    "author": "NEVSTOP",
+    "date": "2024-03-03T23:16:41+08:00",
+    "vi_count": 271
+  },
+  {
+    "sha": "7ba2b5c552e85ad60a269416de942c88dbd5b828",
+    "short": "7ba2b5c",
+    "message": "[add] #252 add a toolbar entry to launcher CSM tools (#253)",
+    "author": "NEVSTOP",
+    "date": "2024-02-22T22:47:50+08:00",
+    "vi_count": 276
+  },
+  {
+    "sha": "4fd6a0f03e8213f7b4d282afaf9ea7d6721b2be7",
+    "short": "4fd6a0f",
+    "message": "Dev on 20240103 (#248)",
+    "author": "NEVSTOP",
+    "date": "2024-02-03T21:54:00+08:00",
+    "vi_count": 265
+  },
+  {
+    "sha": "dcdebfee5fd562abc601f074fc0bddf0c5beabe1",
+    "short": "dcdebfe",
+    "message": "bugfix-20240125 (#243)",
+    "author": "NEVSTOP",
+    "date": "2024-01-28T19:23:12+08:00",
+    "vi_count": 265
+  },
+  {
+    "sha": "ae7c2bc08d5df2a82192e1889644f9db6b53858f",
+    "short": "ae7c2bc",
+    "message": "[fix] minor fix #237",
+    "author": "NEVSTOP",
+    "date": "2024-01-17T11:12:12+08:00",
+    "vi_count": 256
+  },
+  {
+    "sha": "4d93ec6b9088140ae8c6f0b9917fd27ffdf8cb4b",
+    "short": "4d93ec6",
+    "message": "Add more message utility vi (#231)",
+    "author": "NEVSTOP",
+    "date": "2023-12-29T17:28:54+08:00",
+    "vi_count": 256
+  },
+  {
+    "sha": "1a72b9d1cd38737e3d0258178137b2ecd8a59a3a",
+    "short": "1a72b9d",
+    "message": "documentation-wiki-update (#230)",
+    "author": "NEVSTOP",
+    "date": "2023-12-27T17:30:42+08:00",
+    "vi_count": 254
+  },
+  {
+    "sha": "828565ec1ebbdbcbfeac81e6199153d6ed6bbbe0",
+    "short": "828565e",
+    "message": "228 pre action script relative path (#229)",
+    "author": "NEVSTOP",
+    "date": "2023-12-18T13:50:56+08:00",
+    "vi_count": 258
+  },
+  {
+    "sha": "ad0b42dce7ef6e71908888cc7d3f0b785f444647",
+    "short": "ad0b42d",
+    "message": "226 change tick count change flag to random change flag (#227)",
+    "author": "NEVSTOP",
+    "date": "2023-12-15T21:34:59+08:00",
+    "vi_count": 257
+  },
+  {
+    "sha": "bb067e44571f8ec8c7dadc69bb555c69a8cba212",
+    "short": "bb067e4",
+    "message": "Use Random Flag instead of UUID Flag, which is much more fast #225",
+    "author": "NEVSTOP",
+    "date": "2023-12-11T22:38:37+08:00",
+    "vi_count": 256
+  },
+  {
+    "sha": "e14033db3dc82e49ca93d6d2d029f85c416c9ef6",
+    "short": "e14033d",
+    "message": "Minor change 20231209 (#222)",
+    "author": "NEVSTOP",
+    "date": "2023-12-10T12:36:45+08:00",
+    "vi_count": 256
+  },
+  {
+    "sha": "7eb2826239ead106aeebbcb616d2f7e17401d833",
+    "short": "7eb2826",
+    "message": "201-quickbug-fix-and-update (#213)",
+    "author": "NEVSTOP",
+    "date": "2023-12-08T15:57:53+08:00",
+    "vi_count": 255
+  },
+  {
+    "sha": "0d64ae3121d478003c2ce6fb08ab5f0dc4c93a0f",
+    "short": "0d64ae3",
+    "message": "197-core-bug-fix (#206)",
+    "author": "NEVSTOP",
+    "date": "2023-12-04T09:38:53+08:00",
+    "vi_count": 247
+  },
+  {
+    "sha": "47247ba48163471457d51e9ada1649fd3afaf582",
+    "short": "47247ba",
+    "message": "196-worker-modechain-mode-statusupdate-not-trigger-action (#204)",
+    "author": "NEVSTOP",
+    "date": "2023-12-03T12:32:49+08:00",
+    "vi_count": 243
+  },
+  {
+    "sha": "41baa4f6bcd1c6aeb6777f56bd22ef187b9e3bc7",
+    "short": "41baa4f",
+    "message": "wiki-Update-guideline (#200)",
+    "author": "NEVSTOP",
+    "date": "2023-12-01T09:50:59+08:00",
+    "vi_count": 242
+  },
+  {
+    "sha": "76ada57b67cbe9c91cba507b938b18d839b2c8a8",
+    "short": "76ada57",
+    "message": "fix #194",
+    "author": "NEVSTOP",
+    "date": "2023-11-22T20:34:28+08:00",
+    "vi_count": 238
+  },
+  {
+    "sha": "867407020be3575b6005968a033c9a2ae3d28b34",
+    "short": "8674070",
+    "message": "List API 默认只显示 CSM/Agent/Chain #193",
+    "author": "NEVSTOP",
+    "date": "2023-11-16T22:21:43+08:00",
+    "vi_count": 238
+  },
+  {
+    "sha": "5e5890988140d90cc71439ffd73087bb03544a52",
+    "short": "5e58909",
+    "message": "144-build-in-chain-of-responsibility-pattern-support (#189)",
+    "author": "NEVSTOP",
+    "date": "2023-11-16T10:16:40+08:00",
+    "vi_count": 238
+  },
+  {
+    "sha": "801288393d7de9fbd031b843a6f1827e679a6c6d",
+    "short": "8012883",
+    "message": "[imporve] #140 Improve CSM - Send Message and Wait for Reply.vi and CSM - Post Message.vi (#188)",
+    "author": "NEVSTOP",
+    "date": "2023-11-13T12:56:30+08:00",
+    "vi_count": 215
+  },
+  {
+    "sha": "201f03d12df3ee84762b73ac1ed936513b4123ea",
+    "short": "201f03d",
+    "message": "Response/Async Response carry the Error information from target CSM module (#187)",
+    "author": "NEVSTOP",
+    "date": "2023-11-12T23:33:40+08:00",
+    "vi_count": 213
+  },
+  {
+    "sha": "85675b8fd7b8472076d0522cdb611297f8b624e1",
+    "short": "85675b8",
+    "message": "[add] add CSM - Break Down Multiple States String.vi (#185)",
+    "author": "NEVSTOP",
+    "date": "2023-11-06T11:29:10+08:00",
+    "vi_count": 183
+  },
+  {
+    "sha": "932aaea3a4a7f0f02143db5afb5e40b25d880419",
+    "short": "932aaea",
+    "message": "173-PriorityQueue (#184)",
+    "author": "NEVSTOP",
+    "date": "2023-11-04T20:52:34+08:00",
+    "vi_count": 182
+  },
+  {
+    "sha": "683984af6fe92ba39733cdc79a879109f5059871",
+    "short": "683984a",
+    "message": "180-documentation-palette (#181)",
+    "author": "NEVSTOP",
+    "date": "2023-10-30T21:34:28+08:00",
+    "vi_count": 173
+  },
+  {
+    "sha": "cbc62b993d3512d31a17d7f79fa65a67003297df",
+    "short": "cbc62b9",
+    "message": "169 response with arguments (#176)",
+    "author": "NEVSTOP",
+    "date": "2023-10-27T16:02:01+08:00",
+    "vi_count": 172
+  },
+  {
+    "sha": "49fea0ae8f452a349c18cd5d76b77a581d941901",
+    "short": "49fea0a",
+    "message": "171-template-update (#175)",
+    "author": "NEVSTOP",
+    "date": "2023-10-26T17:34:45+08:00",
+    "vi_count": 172
+  },
+  {
+    "sha": "a60034b4b2af5121b6b61f0b98302dc539019f8a",
+    "short": "a60034b",
+    "message": "164 bug fix 20231024 (#166)",
+    "author": "NEVSTOP",
+    "date": "2023-10-24T23:22:57+08:00",
+    "vi_count": 169
+  },
+  {
+    "sha": "27c3be26fa15d06cd649ae2be2bf5a8740dc2f20",
+    "short": "27c3be2",
+    "message": "fix_refreshing_templates_xnode  (#162)",
+    "author": "NEVSTOP",
+    "date": "2023-10-20T13:49:21+08:00",
+    "vi_count": 169
+  },
+  {
+    "sha": "76f818e8c10d5c19f1d86adba842fa0d46c1cabc",
+    "short": "76f818e",
+    "message": "Improving debug tools (#160)",
+    "author": "NEVSTOP",
+    "date": "2023-10-11T09:45:37+08:00",
+    "vi_count": 171
+  },
+  {
+    "sha": "2e5bccf876497e83ca44245f0e88631623241eac",
+    "short": "2e5bccf",
+    "message": "156-create-shortcut-to-launcher-debugtool-for-csm-under-tools-menus (#159)",
+    "author": "NEVSTOP",
+    "date": "2023-10-08T23:24:59+08:00",
+    "vi_count": 169
+  },
+  {
+    "sha": "2baa8bcfb4d7ba82b0a84b722a1d57b50eb21ca4",
+    "short": "2baa8bc",
+    "message": "153 Connect HexStr Data Errors in templates (#155)",
+    "author": "NEVSTOP",
+    "date": "2023-10-08T20:26:15+08:00",
+    "vi_count": 167
+  },
+  {
+    "sha": "882f93302959a0522c6ee074978e771a8683eb7e",
+    "short": "882f933",
+    "message": "150 fix description in vipmio (#152)",
+    "author": "NEVSTOP",
+    "date": "2023-10-06T22:47:48+08:00",
+    "vi_count": 167
+  },
+  {
+    "sha": "dd587ea5aacbbeff45353ddee69cdc77aaa0ba45",
+    "short": "dd587ea",
+    "message": "Change library name (#149)",
+    "author": "NEVSTOP",
+    "date": "2023-10-02T21:29:48+08:00",
+    "vi_count": 167
+  },
+  {
+    "sha": "b3e090b6fb641157c85aae23c40db5b19c0d0904",
+    "short": "b3e090b",
+    "message": "Plan to publish to vipm io (#147)",
+    "author": "NEVSTOP",
+    "date": "2023-09-27T16:03:38+08:00",
+    "vi_count": 167
+  },
+  {
+    "sha": "73c74ba5980a2fcc380cb5045946607831f1f6c6",
+    "short": "73c74ba",
+    "message": "Add log content (#146)",
+    "author": "NEVSTOP",
+    "date": "2023-09-23T11:01:00+08:00",
+    "vi_count": 163
+  },
+  {
+    "sha": "73b7057f993a6970a16e67fd7527be3954ad01b9",
+    "short": "73b7057",
+    "message": "update_example_and_doc (#139)",
+    "author": "NEVSTOP",
+    "date": "2023-09-21T23:49:16+08:00",
+    "vi_count": 160
+  },
+  {
+    "sha": "fefcc0e94ceaa3bf4e7aa2db0ad6dca9719c6313",
+    "short": "fefcc0e",
+    "message": "documentation_for_release (#136)",
+    "author": "NEVSTOP",
+    "date": "2023-09-01T17:27:37+08:00",
+    "vi_count": 148
+  },
+  {
+    "sha": "73b961dd42763fc82110b61deab2472bf48193be",
+    "short": "73b961d",
+    "message": "130-insert-arguments-api (#133)",
+    "author": "NEVSTOP",
+    "date": "2023-08-30T17:54:10+08:00",
+    "vi_count": 146
+  },
+  {
+    "sha": "44a043877667d04ca1a7e87ef9050b555e238f17",
+    "short": "44a0438",
+    "message": "117-documentation-update (#126)",
+    "author": "NEVSTOP",
+    "date": "2023-08-28T21:42:03+08:00",
+    "vi_count": 138
+  },
+  {
+    "sha": "3d9b56f57a9cd082a015b03c5bee18f320eef3e3",
+    "short": "3d9b56f",
+    "message": "119-potential-bug-fix-and-feature (#123)",
+    "author": "NEVSTOP",
+    "date": "2023-08-21T21:19:34+08:00",
+    "vi_count": 130
+  },
+  {
+    "sha": "692ba9192b4b61f794c14f16fa274bada7cc110d",
+    "short": "692ba91",
+    "message": "109 post message no response mode (#116)",
+    "author": "NEVSTOP",
+    "date": "2023-08-20T22:07:34+08:00",
+    "vi_count": 130
+  },
+  {
+    "sha": "dc3d9ea15a69543768d597ed9bb341c4973aa6e6",
+    "short": "dc3d9ea",
+    "message": "113-internal-potential-bug-precaution (#115)",
+    "author": "NEVSTOP",
+    "date": "2023-08-19T23:28:52+08:00",
+    "vi_count": 125
+  },
+  {
+    "sha": "e57fbc9cde2a4bedecc67b8af0f1b5469e8401e7",
+    "short": "e57fbc9",
+    "message": "quick fix: #104",
+    "author": "NEVSTOP",
+    "date": "2023-08-10T22:37:23+08:00",
+    "vi_count": 120
+  },
+  {
+    "sha": "4501592d30acd393f53e0407b13c350c47429e6f",
+    "short": "4501592",
+    "message": "104-framework-for-addon  (#105)",
+    "author": "NEVSTOP",
+    "date": "2023-08-10T22:08:36+08:00",
+    "vi_count": 120
+  },
+  {
+    "sha": "d2a8e6d350ce3c508ef75638e1b93ef7445d58d6",
+    "short": "d2a8e6d",
+    "message": "17 match express pattern node stop making the vi inline need benchmark and improve the performance (#102)",
+    "author": "NEVSTOP",
+    "date": "2023-08-10T09:40:06+08:00",
+    "vi_count": 116
+  },
+  {
+    "sha": "f6d750cd652342af8d3befa0f890057b11ead1a4",
+    "short": "f6d750c",
+    "message": "91 postsend multi message bug (#101)",
+    "author": "NEVSTOP",
+    "date": "2023-08-09T22:13:32+08:00",
+    "vi_count": 116
+  },
+  {
+    "sha": "557ea7b5a111d5d939c7a9148eaedee3918127f3",
+    "short": "557ea7b",
+    "message": "96-tool-switch-deccription-language (#98)",
+    "author": "NEVSTOP",
+    "date": "2023-08-09T14:44:47+08:00",
+    "vi_count": 116
+  },
+  {
+    "sha": "207875376394ef91adc7fca6996e6fb9c05aebd4",
+    "short": "2078753",
+    "message": "86-doc-script (#88)",
+    "author": "NEVSTOP",
+    "date": "2023-08-07T23:27:28+08:00",
+    "vi_count": 118
+  },
+  {
+    "sha": "dbaf5084635324fa8d78531faffe2c30e76f7b5f",
+    "short": "dbaf508",
+    "message": "78 postmessgeapisendmessageapi generate jkism name with UUID (#80)",
+    "author": "NEVSTOP",
+    "date": "2023-08-02T23:17:16+08:00",
+    "vi_count": 112
+  },
+  {
+    "sha": "174bc753a22a9273ec0f637e1e46b599b751c684",
+    "short": "174bc75",
+    "message": "#75 fix explorer to example folder bug (#77)",
+    "author": "NEVSTOP",
+    "date": "2023-08-02T10:57:31+08:00",
+    "vi_count": 108
+  },
+  {
+    "sha": "76f2595ca60488083b3f1fa4a359238f057fd344",
+    "short": "76f2595",
+    "message": "26 global event (#74)",
+    "author": "NEVSTOP",
+    "date": "2023-08-01T19:05:22+08:00",
+    "vi_count": 106
+  },
+  {
+    "sha": "4cc33445cc985df5e8b52e5585a4b5b4caded1be",
+    "short": "4cc3344",
+    "message": "47-dispatch-worker (#69)",
+    "author": "NEVSTOP",
+    "date": "2023-08-01T11:22:46+08:00",
+    "vi_count": 95
+  },
+  {
+    "sha": "72f7b75db04e746a0cac4bc869e5c45056eff34c",
+    "short": "72f7b75",
+    "message": "54 broadcast no source mode (#68)",
+    "author": "NEVSTOP",
+    "date": "2023-07-31T09:03:45+08:00",
+    "vi_count": 79
+  },
+  {
+    "sha": "a6f01623d801955d13e1bd514cb9846fca4eead5",
+    "short": "a6f0162",
+    "message": "Update template (#65)",
+    "author": "NEVSTOP",
+    "date": "2023-07-29T22:39:40+08:00",
+    "vi_count": 74
+  },
+  {
+    "sha": "02c1447d57b4c6d3a6b4905fa98c9f52f75a3a53",
+    "short": "02c1447",
+    "message": "Doc and template update (#56)",
+    "author": "NEVSTOP",
+    "date": "2023-07-29T11:51:04+08:00",
+    "vi_count": 74
+  },
+  {
+    "sha": "c730f1fcb7b9642d50462990b3e4de8281c1a6df",
+    "short": "c730f1f",
+    "message": "#55",
+    "author": "NEVSTOP",
+    "date": "2023-07-28T10:58:02+08:00",
+    "vi_count": 67
+  },
+  {
+    "sha": "f710fd2f0f686f454fee0d5d1acd70076f74c630",
+    "short": "f710fd2",
+    "message": "46-broadcast (#51)",
+    "author": "NEVSTOP",
+    "date": "2023-07-28T01:28:35+08:00",
+    "vi_count": 67
+  },
+  {
+    "sha": "32d370156f72ab45e2a5f661676c96ca9abf4016",
+    "short": "32d3701",
+    "message": "#45",
+    "author": "NEVSTOP",
+    "date": "2023-07-25T16:51:38+08:00",
+    "vi_count": 51
+  },
+  {
+    "sha": "99ee1a4124773678cf02039ae56b09b27500c3d3",
+    "short": "99ee1a4",
+    "message": "#44",
+    "author": "NEVSTOP",
+    "date": "2023-07-24T17:23:43+08:00",
+    "vi_count": 51
+  },
+  {
+    "sha": "ade8556ac7e2f28cf3dedb0ecc870699bceceb99",
+    "short": "ade8556",
+    "message": "Documentation (#41)",
+    "author": "NEVSTOP",
+    "date": "2023-07-22T11:23:40+08:00",
+    "vi_count": 51
+  },
+  {
+    "sha": "f93d277319f6a0280bcf35fec6b03e6a590171f6",
+    "short": "f93d277",
+    "message": "fix broken",
+    "author": "NEVSTOP",
+    "date": "2023-07-20T19:19:38+08:00",
+    "vi_count": 49
+  },
+  {
+    "sha": "20adb881ec7c1d0bf2577c22f45f0da9c8c87e55",
+    "short": "20adb88",
+    "message": "34 internal queue release issue (#35)",
+    "author": "NEVSTOP",
+    "date": "2023-07-20T15:50:42+08:00",
+    "vi_count": 49
+  },
+  {
+    "sha": "8dc83193214435b2180a3234aed915b5edaf8e44",
+    "short": "8dc8319",
+    "message": "32 bug post message async response (#33)",
+    "author": "NEVSTOP",
+    "date": "2023-07-19T11:21:06+08:00",
+    "vi_count": 48
+  },
+  {
+    "sha": "4097b713e51960f17394d4bd3387fb74b7b46ae8",
+    "short": "4097b71",
+    "message": "25 add async response handler (#31)",
+    "author": "NEVSTOP",
+    "date": "2023-07-18T23:25:58+08:00",
+    "vi_count": 47
+  },
+  {
+    "sha": "fc0546c34b3744e1644a0cd427408934869b3f49",
+    "short": "fc0546c",
+    "message": "Patch on 20230718 (#30)",
+    "author": "NEVSTOP",
+    "date": "2023-07-18T19:29:12+08:00",
+    "vi_count": 46
+  },
+  {
+    "sha": "5c36d8b000d0f3ddf06f9eae043051f376dc0e38",
+    "short": "5c36d8b",
+    "message": "Documentation update (#29)",
+    "author": "NEVSTOP",
+    "date": "2023-07-17T22:27:48+08:00",
+    "vi_count": 46
+  },
+  {
+    "sha": "13470340c4625a06b91d18da6c4e45d57400b08e",
+    "short": "1347034",
+    "message": "Patch on 20230717 (#24)",
+    "author": "NEVSTOP",
+    "date": "2023-07-17T17:35:14+08:00",
+    "vi_count": 44
+  },
+  {
+    "sha": "ec2a1684f844e1a96a9e887551f21d8316b26a94",
+    "short": "ec2a168",
+    "message": "update Example/JKISM+ TopMain2.vi",
+    "author": "NEVSTOP",
+    "date": "2023-07-16T22:41:00+08:00",
+    "vi_count": 44
+  },
+  {
+    "sha": "ad052e05661c4a7f72faf4e1dc5fa5bb9ae85c38",
+    "short": "ad052e0",
+    "message": "separate compile from code",
+    "author": "NEVSTOP",
+    "date": "2023-07-16T22:36:26+08:00",
+    "vi_count": 44
+  },
+  {
+    "sha": "de56049cb5baa5f987184025c43d2c544ac911ca",
+    "short": "de56049",
+    "message": "#14",
+    "author": "NEVSTOP",
+    "date": "2023-07-16T22:35:26+08:00",
+    "vi_count": 44
+  },
+  {
+    "sha": "89adca0bfa857e4486fecb297796bf5638b928c9",
+    "short": "89adca0",
+    "message": "20 critical error dup module (#22)",
+    "author": "NEVSTOP",
+    "date": "2023-07-16T21:40:25+08:00",
+    "vi_count": 41
+  },
+  {
+    "sha": "551a8cb2df2e872e5c21044008638203a758b6f0",
+    "short": "551a8cb",
+    "message": "9 jki state machine editor 在 template上不能打开 (#21)",
+    "author": "NEVSTOP",
+    "date": "2023-07-16T20:03:06+08:00",
+    "vi_count": 38
+  },
+  {
+    "sha": "199cc93520d1632ecc458175f9e5f0a116441374",
+    "short": "199cc93",
+    "message": "13-postsend-message-to-multiple-dest-module-feature (#19)",
+    "author": "NEVSTOP",
+    "date": "2023-07-16T11:34:08+08:00",
+    "vi_count": 30
+  },
+  {
+    "sha": "9c2eae9af2f558cef8fa2ebea2fe45e9afa8b3f0",
+    "short": "9c2eae9",
+    "message": "12-wait-for-response-framework-feature (#15)",
+    "author": "NEVSTOP",
+    "date": "2023-07-14T09:05:02+08:00",
+    "vi_count": 26
+  },
+  {
+    "sha": "4e3090af0e5d99507b5aa7d0d73b787fb94de146",
+    "short": "4e3090a",
+    "message": "6 未命名时statemachine应该保留与其他machine发送数据以及调度的能力 (#7)",
+    "author": "NEVSTOP",
+    "date": "2023-07-07T16:39:07+08:00",
+    "vi_count": 24
+  },
+  {
+    "sha": "17641e01fcb38ab6fb203c5f8b5cddb5497eb62c",
+    "short": "17641e0",
+    "message": "#3 Add StandAlone Mode",
+    "author": "NEVSTOP",
+    "date": "2023-07-04T18:49:50+08:00",
+    "vi_count": 23
+  },
+  {
+    "sha": "6fff72ee6c420d6214b5d95679d5e8b1673717ba",
+    "short": "6fff72e",
+    "message": "Dev on 20230630 (#1)",
+    "author": "NEVSTOP",
+    "date": "2023-07-01T11:40:35+08:00",
+    "vi_count": 23
+  },
+  {
+    "sha": "0164242bbdca8a2027d272f945832f51b043b735",
+    "short": "0164242",
+    "message": "update code",
+    "author": "NEVSTOP",
+    "date": "2023-06-30T19:02:25+08:00",
+    "vi_count": 11
+  },
+  {
+    "sha": "424fcbe8cf67a9a210b107c69a58e47e2f393600",
+    "short": "424fcbe",
+    "message": "init project",
+    "author": "NEVSTOP",
+    "date": "2023-06-26T23:46:19+08:00",
+    "vi_count": 10
+  }
+]

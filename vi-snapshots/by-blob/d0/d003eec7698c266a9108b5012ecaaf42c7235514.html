@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<TITLE>Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Communicable State Machine.lvlib:CSM _ Mark As Chain Module.vi"></A><H2>Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi</H2>
+<P>Concatenates the name of a Chain of Responsibility Mode module, using `$` as the separator. Note that the order does not need to be consecutive, but it must be unique. Nodes with smaller numbers are arranged at the front of the responsibility chain.</P>
+<P></P>
+<P>&lt;b&gt;Reference Example&lt;/b&gt;: `4. Advance Examples\2. Chain of Responsibility Example`.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;CSM Chain of Responsibility Mode&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; Multiple CSM modules form a complete module via Chain of Responsibility Mode by appending `$` to the requested name to form a chain for processing transactions.</P>
+<P>&gt; - From an external call perspective, these instances collectively form a composite module named Chain.</P>
+<P>&gt; - Each instance is named a Chain Node.</P>
+<P>&gt;</P>
+<P>&gt; &lt;b&gt;Behavior&lt;/b&gt;: External callers can consider the Chain as a single CSM module capable of message communication, state registration, and so on. Internally, nodes attempt to process the message sequentially according to their order. When a node has the capability to process the current message, the message is processed and is not passed further down the chain.</P>
+<P>&gt;</P>
+<P>&gt; &lt;b&gt;Example&lt;/b&gt;:</P>
+<P>&gt;</P>
+<P>&gt;      // Request module name as `module$`, where `module` is the chain name. Instantiate 4 instances. Their names might be:</P>
+<P>&gt;      // - `module$1`</P>
+<P>&gt;      // - `module$2`</P>
+<P>&gt;      // - `module$3`</P>
+<P>&gt;      // - `module$4`</P>
+<P>&gt;      // The sequence of the composed Chain is `module$1(head) &gt;&gt; module$2 &gt;&gt; module$3 &gt;&gt; module$4(tail)`</P>
+<P>&gt;      // Assume `module$3` and `module$4` can process &quot;csm message&quot;</P>
+<P>&gt;      `csm message &gt;&gt; arguments -@ module`</P>
+<P>&gt;      // This message will be processed by `module$3`. `module$4` will not respond.</P>
+<P>&gt;</P>
+<P>&gt; &lt;b&gt;Application Scenarios&lt;/b&gt;:</P>
+<P>&gt; - Permission approval process. Based on job hierarchy, personnel with specific functional permissions can approve directly without passing it further.</P>
+<P>&gt; - Function concatenation. Different modules implement different tasks, and different functional sets can be combined through concatenation.</P>
+<P>&gt; - Function overriding. Implementing overloading in OOP through overriding.</P>
+<P>&gt; - Worker Mode scenarios are usually not suitable for having UI operations.</P>
+<P></P>
+<P></P>
+<P>&gt; [!NOTE] &lt;b&gt;Name Concatenation API&lt;/b&gt;</P>
+<P>&gt;</P>
+<P>&gt; This VI only manipulates the module name string and has no actual functionality. Therefore, once you are familiar with the CSM rules, you can directly enter name string and rule symbols without calling this API.</P>
+<P></P>
+<P></P>
+<P>-- &lt;b&gt;Controls&lt;/b&gt; --</P>
+<P>- &lt;b&gt;CSM Name&lt;/b&gt;: CSM module name.</P>
+<P>- &lt;b&gt;Order&lt;/b&gt;: Sequence in Chain of Responsibility Mode. Nodes with smaller numbers are arranged at the front of the responsibility chain.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+<P>- &lt;b&gt;CSM Name (Marked As Chain)&lt;/b&gt;: CSM module name marked with `$`.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAUUlEQVQoU42PwQ0AIAgDOwn7D9mHERMVkerFxAdXGmAP8CFAMAQd76/MZyEUMgo+iwLjhj70Yv+yYEPAuozkJhguwrnBZEVmXVGy9RXI+FyiaZwnLfc8MCdDAAAAAElFTkSuQmCC" ALT="cstr"></P>
+</TD>
+<TD>
+<B>CSM Name</B> <P>CSM module name.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAVklEQVQoU42PXQ7AIAyCuf/xdh4ejP3ZNF1RYpoYP8DiOQgXAIQc0PZ5Wv8KmAE2YoJ7gr/H3QiyADkFgOiwCvK/Itk9Yfmkb1gqqr4tWmVnL2l/Q7QGRH36sW26z7AAAAAASUVORK5CYII=" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Order</B> <P>Sequence in Chain of Responsibility Mode. Nodes with smaller numbers are arranged at the front of the responsibility chain.</P>
+<P></P>
+<P>-- &lt;b&gt;Indicators&lt;/b&gt; --</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAMAAABA3o1rAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAAAT0lEQVQoU42QyQ0AIAgEtxL6L5KHURAkkWMePGBYoqAGEEpmQpGvQr6uAnsryC7wnVXCGcphSH0F1uZ+N1lOSCA0gqRnJ/DHhBQMv7oRGhYk9SS1qQIy0QAAAABJRU5ErkJggg==" ALT="istr"></P>
+</TD>
+<TD>
+<B>CSM Name (Marked As Chain)</B> <P>CSM module name marked with `$`.</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG src="data:image/png;base64, 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" ALT="Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi History&quot;</P>
+<P>Current Revision:   67</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAADYAAAB1CAMAAAAyV+ItAAADAFBMVEX//////8z//5n//2b//zP//wD/zP//zMz/zJn/zGb/zDP/zAD/mf//mcz/mZn/mWb/mTP/mQD/Zv//Zsz/Zpn/Zmb/ZjP/ZgD/M///M8z/M5n/M2b/MzP/MwD/AP//AMz/AJn/AGb/ADP/AADM///M/8zM/5nM/2bM/zPM/wDMzP/MzMzMzJnMzGbMzDPMzADMmf/MmczMmZnMmWbMmTPMmQDMZv/MZszMZpnMZmbMZjPMZgDMM//MM8zMM5nMM2bMMzPMMwDMAP/MAMzMAJnMAGbMADPMAACZ//+Z/8yZ/5mZ/2aZ/zOZ/wCZzP+ZzMyZzJmZzGaZzDOZzACZmf+ZmcyZmZmZmWaZmTOZmQCZZv+ZZsyZZpmZZmaZZjOZZgCZM/+ZM8yZM5mZM2aZMzOZMwCZAP+ZAMyZAJmZAGaZADOZAABm//9m/8xm/5lm/2Zm/zNm/wBmzP9mzMxmzJlmzGZmzDNmzABmmf9mmcxmmZlmmWZmmTNmmQBmZv9mZsxmZplmZmZmZjNmZgBmM/9mM8xmM5lmM2ZmMzNmMwBmAP9mAMxmAJlmAGZmADNmAAAz//8z/8wz/5kz/2Yz/zMz/wAzzP8zzMwzzJkzzGYzzDMzzAAzmf8zmcwzmZkzmWYzmTMzmQAzZv8zZswzZpkzZmYzZjMzZgAzM/8zM8wzM5kzM2YzMzMzMwAzAP8zAMwzAJkzAGYzADMzAAAA//8A/8wA/5kA/2YA/zMA/wAAzP8AzMwAzJkAzGYAzDMAzAAAmf8AmcwAmZkAmWYAmTMAmQAAZv8AZswAZpkAZmYAZjMAZgAAM/8AM8wAM5kAM2YAMzMAMwAAAP8AAMwAAJkAAGYAADPuAADdAAC7AACqAACIAAB3AABVAABEAAAiAAARAAAA7gAA3QAAuwAAqgAAiAAAdwAAVQAARAAAIgAAEQAAAO4AAN0AALsAAKoAAIgAAHcAAFUAAEQAACIAABHu7u7d3d27u7uqqqqIiIh3d3dVVVVEREQiIiIREREAAAD7CIKZAAACBUlEQVRYR+3WTU6DQBQH8OmCBC/Bpt3RG3gAd3gCV+oFTNy46wGMJ/ACXmJ2Lt0Yr9KQbkbem08Y3mOGGGmUPykl7fx4vIFMEGJ23jMSMvKEUf4ZU2xoVjNhmKq7s9bEjmRdOQUlx3ckm1ltbm81NYtwHTSTfpgcHDFM1m6wdM4c/TiT3X/SjrUXZ4+SWOEetCwmClGkMrwB0lSDTQVXSrMrF6zmK2omp1lhnbCOZuJkY3rzFVmGD5e0vSkVVOxuaW/oOLNdGacvnWX4WNieTL1UFvYGR9Bwb2jM4DLD3gDBjxT7dHF1dCU4F327A+bnUCP24erfN19pgvlFoV9pkrnlBiulLkF+wcNKiQtesLyeznd5ZUMyn2j06NCY9XfE0FGmK/0SM42xbBg/WDEvT1HomZwMf2IyK4uysigri/JH2G1GlmQiKWfA2gOTlmLt4ZEJujHGqs5ls7LhmCByodTHTmSz531Ts6yq8FNVcGBTvu0b/TfBcCxI3Gw2L08805V6bIvua8eyKNstuPLmi+sNO/K9wQeUKJvLB7a34aZReX3XTDCspjfT3uZeqde83nTKiZnkksX8qxDHYAhMI3yb4UlMGGY2od/28hm+HSqeYSPd1AevdylstJrxWcxOS+ZMprFhlLHdnmTHEedypFjLuSO5Ts5clROysigLs+QsxtYsmG8Cjd6s7f4cvAAAAABJRU5ErkJggg==" ALT="Communicable State Machine.lvlib:CSM - Mark As Chain Module.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>
