@@ -24,17 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - mode: HTMLSingleFile
-            image: ghcr.io/elijah286/communicable-state-machine-labview@sha256:5f29fff95ef4c8bef793a0d571b7fb40e0c5a5e9807532a785c801acb0e75226
-          - mode: PlainText
-            image: ghcr.io/elijah286/communicable-state-machine-labview@sha256:5f29fff95ef4c8bef793a0d571b7fb40e0c5a5e9807532a785c801acb0e75226
-          - mode: XML
-            image: ghcr.io/elijah286/communicable-state-machine-labview@sha256:5f29fff95ef4c8bef793a0d571b7fb40e0c5a5e9807532a785c801acb0e75226
-          - mode: older-html
-            image: nationalinstruments/labview:2026q1patch2-linux
-    env:
-      IMAGE: ${{ matrix.image }}
+        mode: [candidate, recovery-full]
     steps:
       - uses: actions/checkout@v5
         with:

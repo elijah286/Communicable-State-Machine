@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import shutil
 
 
 workspace = Path(os.environ['GITHUB_WORKSPACE'])
@@ -10,6 +11,8 @@ mode = os.environ['MODE']
 output = workspace / 'diagnostic-output'
 output.mkdir()
 tooling = workspace / 'tooling'
+shutil.copyfile(tooling / '.github/diagnostics/vidiff/build-vidiff-report.py',
+                tooling / '.github/labview/build-vidiff-report.py')
 changed = subprocess.check_output(
     ['git', '-C', str(workspace / 'head'), 'diff', '--name-only',
      os.environ['BASE_SHA'], os.environ['HEAD_SHA'], '--', '*.vi', '*.ctl'], text=True)
@@ -55,5 +58,5 @@ for index, target in enumerate(cases, 1):
 print(json.dumps(results, indent=2))
 with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
     summary.write('```json\n' + json.dumps(results, indent=2) + '\n```\n')
-if mode == 'recovery-full' and any(result['exit'] != 0 for result in results):
+if any(result['exit'] != 0 for result in results):
     sys.exit(1)

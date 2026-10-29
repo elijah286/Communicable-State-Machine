@@ -39,28 +39,6 @@ is_labview_file() {
     [[ "$magic" == "LVIN" || "$magic" == "LVCC" ]]
 }
 
-# ── Browser-compatibility fix for comparison reports ─────────────────────────
-# CreateComparisonReport lays out the head-side diagram image with
-#   position: relative; top: calc(-100% - 23px)
-# inside an `aspect-ratio` box so an interactive sub-VI hotspot layer can sit on
-# top of it. Safari does not resolve the percentage `top` against an
-# aspect-ratio-derived height, so the image drops below its box and overlaps the
-# change-description text underneath it. Inject a <style> that renders the image
-# in normal flow and overlays the hotspot layer with absolute positioning (which
-# needs no percentage-height resolution) — this fixes Safari/Firefox while
-# keeping the hover tooltips aligned to the image in every browser.
-OVERLAY_FIX_CSS='td.diff-image>div[style*="aspect-ratio"]{aspect-ratio:auto!important;height:auto!important;max-width:100%!important;position:relative!important}td.diff-image>div[style*="aspect-ratio"]>div{height:auto!important}td.diff-image>div[style*="aspect-ratio"]>div>div{position:absolute!important;inset:0!important;height:auto!important}td.diff-image img.difference-image{position:static!important;top:auto!important}'
-
-inject_overlay_fix() {
-    local html="$1"
-    [ -f "$html" ] || return 0
-    grep -q 'vidiff-overlay-fix' "$html" && return 0
-    # Insert right before </head>; the override uses !important so it wins
-    # regardless of source order. `|` is the sed delimiter so the / in the tags
-    # and selectors needs no escaping.
-    sed -i "s|</head>|<style id=\"vidiff-overlay-fix\">${OVERLAY_FIX_CSS}</style></head>|" "$html"
-}
-
 reset_labview_session() {
     local status=0
     pkill -KILL -x "${LABVIEW_EXE##*/}" || status=$?
@@ -72,13 +50,15 @@ reset_labview_session() {
 }
 
 run_labview_operation() {
+    local report_path="$1"
+    shift
     local attempt log_path status
     for attempt in 1 2; do
         log_path="${OUT_DIR}/cli-attempt-${attempt}.log"
-        rm -f "${OUT_DIR}/index.html"
+        rm -f "$report_path" "${OUT_DIR}/index.html"
         if "$LABVIEWCLI" "$@" >"$log_path" 2>&1; then
             cat "$log_path"
-            if [ -s "${OUT_DIR}/index.html" ]; then
+            if [ -s "$report_path" ]; then
                 return 0
             fi
             echo "  ERROR: LabVIEWCLI succeeded but produced no report for ${REL_PATH}." >&2
@@ -132,20 +112,22 @@ for REL_PATH in "${VI_FILES[@]}"; do
     TYPE=""
     if $BASE_EXISTS && $HEAD_EXISTS; then
         TYPE="modified"
-        run_labview_operation \
+        run_labview_operation "${OUT_DIR}/comparison.xml" \
             -OperationName    CreateComparisonReport \
             -LabVIEWPath      "$LABVIEW_EXE" \
             -VI1              "$BASE_PATH" \
             -VI2              "$HEAD_PATH" \
-            -ReportType       html \
-            -ReportPath       "${OUT_DIR}/index.html" \
+            -ReportType       XML \
+            -ReportPath       "${OUT_DIR}/comparison.xml" \
             -LogToConsole     TRUE \
             -Headless || { echo "  ERROR: CreateComparisonReport failed"; ERRORS=$((ERRORS+1)); continue; }
-        inject_overlay_fix "${OUT_DIR}/index.html"
+        python3 "${OPS_DIR}/build-vidiff-report.py" "${OUT_DIR}/comparison.xml" "${OUT_DIR}/index.html" || {
+            echo "  ERROR: Could not render comparison XML"; ERRORS=$((ERRORS+1)); continue;
+        }
 
     elif $HEAD_EXISTS; then
         TYPE="added"
-        run_labview_operation \
+        run_labview_operation "${OUT_DIR}/index.html" \
             -OperationName                PrintToSingleFileHtml \
             -AdditionalOperationDirectory "$PRINT_TO_HTML_OP" \
             -LabVIEWPath                  "$LABVIEW_EXE" \
@@ -157,7 +139,7 @@ for REL_PATH in "${VI_FILES[@]}"; do
 
     elif $BASE_EXISTS; then
         TYPE="deleted"
-        run_labview_operation \
+        run_labview_operation "${OUT_DIR}/index.html" \
             -OperationName                PrintToSingleFileHtml \
             -AdditionalOperationDirectory "$PRINT_TO_HTML_OP" \
             -LabVIEWPath                  "$LABVIEW_EXE" \

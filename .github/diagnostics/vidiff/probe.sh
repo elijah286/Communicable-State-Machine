@@ -26,7 +26,7 @@ if [[ "$MODE" == xvfb-* ]]; then
     sleep 2
 fi
 
-if [ "$MODE" = recovery-full ]; then
+if [ "$MODE" = recovery-full ] || [ "$MODE" = candidate ]; then
     timeout 1800 bash /diagnostic/vidiff-candidate.sh \
         /workspace-base /workspace /out/report /ops
     exit $?
