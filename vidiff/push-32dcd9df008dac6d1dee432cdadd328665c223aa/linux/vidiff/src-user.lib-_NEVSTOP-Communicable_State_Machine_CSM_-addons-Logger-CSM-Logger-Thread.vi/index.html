@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"> <title>LabVIEW VI Comparison Report</title> <link href="index_files/support/style.css" rel="stylesheet"><style id="vidiff-overlay-fix">td.diff-image>div[style*="aspect-ratio"]{aspect-ratio:auto!important;height:auto!important;max-width:100%!important;position:relative!important}td.diff-image>div[style*="aspect-ratio"]>div{height:auto!important}td.diff-image>div[style*="aspect-ratio"]>div>div{position:absolute!important;inset:0!important;height:auto!important}td.diff-image img.difference-image{position:static!important;top:auto!important}</style></head>
+<body>
+<div class="report">
+<h1 class="report-title">LabVIEW VI Comparison Report</h1>
+<p class="generation-time">07:07:04 10/29/2026</p>
+<div class="compared-VIs">
+<details><summary class="difference-heading"><div class="dropdown-left">First VI: /workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM-Logger-Thread.vi</div><div class="dropdown-right">Second VI: /workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM-Logger-Thread.vi</div></summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Front Panel Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/fp_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/fp_2.png"/>
+</td></tr><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Block Diagram Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/bd_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/bd_2.png"/>
+</td></tr></table></details>
+</div>
+<div class="included-attributes">
+<ul class="inclusion-list">
+<li class="checked">Front Panel</li>
+<li class="checked">Front Panel Position/Size</li>
+<li class="checked">Block Diagram Functional</li>
+<li class="checked">Block Diagram Cosmetic</li>
+<li class="checked">VI Attribute</li>
+</ul>
+</div>
+<h2 class="section-header">Detailed Information</h2>
+<details open>
+
+<summary class="difference-heading">1. Block Diagram objects</summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">/workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM-Logger-Thread.vi</td><td class="difference-divider"></td><td class="compared-vi-image-caption">/workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM-Logger-Thread.vi</td></tr><tr class="compared-images"><td class="diff-image">
+
+<img class="difference-image" src="index_files/0_0_4821_4821_1.png" alt="index_files/0_0_4821_4821_1.png">
+</td><td class="difference-divider"></td><td class="diff-image">
+
+<img class="difference-image" src="index_files/0_0_4821_4821_2.png" alt="index_files/0_0_4821_4821_2.png">
+</td></tr></table>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">SubVI "Communicable State Machine.lvlib:LogFilter.lvclass:Read Rules.vi" - reentrant VI : changed from "<tt>reentrant</tt>" to "<tt>non-reentrant</tt>"</li>
+<li class="diff-detail">Unbundle By Name  - element replaced : changed from "<tt>PeriodicLog.CheckPeriod(s)</tt>" to "<tt>PeriodicMessageFilter.CheckPeriod(s)</tt>"</li>
+<li class="diff-detail">Unbundle By Name  - element replaced : changed from "<tt>PeriodicLog.Enable</tt>" to "<tt>PeriodicMessageFilter.Enable</tt>"</li>
+</ol>
+</details>
+<details open>
+
+<summary class="difference-heading">2. Front Panel - LabVIEW Object</summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">/workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM-Logger-Thread.vi</td><td class="difference-divider"></td><td class="compared-vi-image-caption">/workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/addons/Logger/CSM-Logger-Thread.vi</td></tr><tr class="compared-images"><td class="diff-image">
+
+<img class="difference-image" src="index_files/1_0_2142_2142_1.png" alt="index_files/1_0_2142_2142_1.png">
+</td><td class="difference-divider"></td><td class="diff-image">
+
+<img class="difference-image" src="index_files/1_0_2142_2142_2.png" alt="index_files/1_0_2142_2142_2.png">
+</td></tr></table>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">LabVIEW Object "GlobalLogFilter.lvclass" - data value : changed from "<tt>(Communicable State Machine.lvlib:LogFilter.lvclass: {Rules =&gt; {Global =&gt; {CSM =&gt; [], LogType =&gt; [], State =&gt; [], StateType =&gt; []}, CSM =&gt; {LogType =&gt; [], State =&gt; [], StateType =&gt; []}, PeriodicLog =&gt; {Enable =&gt; True, Threshold(#/s) =&gt; 2.000E+0, CheckPeriod(s) =&gt; 1.000E+0}}, Cache =&gt; {Global =&gt; {CSM =&gt; [], State =&gt; []}, CSM =&gt; {LogTypeMap =&gt; &lt;Variant\n: Empty&gt;, StateMap =&gt; &lt;Variant\n: Empty&gt;, StateTypeMap =&gt; &lt;Variant\n: Empty&gt;}}})</tt>" to "<tt>(Communicable State Machine.lvlib:LogFilter.lvclass: {Rules =&gt; {Global =&gt; {CSM =&gt; [], LogType =&gt; [], State =&gt; [], StateType =&gt; [], Broadcast =&gt; [], UserLog =&gt; []}, CSM =&gt; {LogType =&gt; [], State =&gt; [], StateType =&gt; [], Broadcast =&gt; [], UserLog =&gt; []}, PeriodicMessageFilter =&gt; {Enable =&gt; True, Threshold(#/s) =&gt; 2.000E+0, CheckPeriod(s) =&gt; 1.000E+0}}, Cache =&gt; {Global =&gt; {CSM(lower) =&gt; [], State(lower) =&gt; [], Broadcast(lower) =&gt; [], UserLog(lower) =&gt; []}, CSM =&gt; {LogTypeMap =&gt; &lt;Variant\n: Empty&gt;, StateMap =&gt; &lt;Variant\n: Empty&gt;, StateTypeMap =&gt; &lt;Variant\n: Empty&gt;, BroadcastMap =&gt; &lt;Variant\n: Empty&gt;, UserLogMap =&gt; &lt;Variant\n: Empty&gt;}}})</tt>"</li>
+<li class="diff-detail">LabVIEW Object "GlobalLogFilter.lvclass" - default data value : changed from "<tt>(Communicable State Machine.lvlib:LogFilter.lvclass: {Rules =&gt; {Global =&gt; {CSM =&gt; [], LogType =&gt; [], State =&gt; [], StateType =&gt; []}, CSM =&gt; {LogType =&gt; [], State =&gt; [], StateType =&gt; []}, PeriodicLog =&gt; {Enable =&gt; True, Threshold(#/s) =&gt; 2.000E+0, CheckPeriod(s) =&gt; 1.000E+0}}, Cache =&gt; {Global =&gt; {CSM =&gt; [], State =&gt; []}, CSM =&gt; {LogTypeMap =&gt; &lt;Variant\n: Empty&gt;, StateMap =&gt; &lt;Variant\n: Empty&gt;, StateTypeMap =&gt; &lt;Variant\n: Empty&gt;}}})</tt>" to "<tt>(Communicable State Machine.lvlib:LogFilter.lvclass: {Rules =&gt; {Global =&gt; {CSM =&gt; [], LogType =&gt; [], State =&gt; [], StateType =&gt; [], Broadcast =&gt; [], UserLog =&gt; []}, CSM =&gt; {LogType =&gt; [], State =&gt; [], StateType =&gt; [], Broadcast =&gt; [], UserLog =&gt; []}, PeriodicMessageFilter =&gt; {Enable =&gt; True, Threshold(#/s) =&gt; 2.000E+0, CheckPeriod(s) =&gt; 1.000E+0}}, Cache =&gt; {Global =&gt; {CSM(lower) =&gt; [], State(lower) =&gt; [], Broadcast(lower) =&gt; [], UserLog(lower) =&gt; []}, CSM =&gt; {LogTypeMap =&gt; &lt;Variant\n: Empty&gt;, StateMap =&gt; &lt;Variant\n: Empty&gt;, StateTypeMap =&gt; &lt;Variant\n: Empty&gt;, BroadcastMap =&gt; &lt;Variant\n: Empty&gt;, UserLogMap =&gt; &lt;Variant\n: Empty&gt;}}})</tt>"</li>
+</ol>
+</details>
+</div>
+</body>
+</html>

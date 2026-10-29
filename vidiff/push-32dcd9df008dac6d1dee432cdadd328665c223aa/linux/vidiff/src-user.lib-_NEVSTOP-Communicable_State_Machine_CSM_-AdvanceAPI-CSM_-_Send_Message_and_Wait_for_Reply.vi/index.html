@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"> <title>LabVIEW VI Comparison Report</title> <link href="index_files/support/style.css" rel="stylesheet"><style id="vidiff-overlay-fix">td.diff-image>div[style*="aspect-ratio"]{aspect-ratio:auto!important;height:auto!important;max-width:100%!important;position:relative!important}td.diff-image>div[style*="aspect-ratio"]>div{height:auto!important}td.diff-image>div[style*="aspect-ratio"]>div>div{position:absolute!important;inset:0!important;height:auto!important}td.diff-image img.difference-image{position:static!important;top:auto!important}</style></head>
+<body>
+<div class="report">
+<h1 class="report-title">LabVIEW VI Comparison Report</h1>
+<p class="generation-time">06:59:21 10/29/2026</p>
+<div class="compared-VIs">
+<details><summary class="difference-heading"><div class="dropdown-left">First VI: /workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Send Message and Wait for Reply.vi</div><div class="dropdown-right">Second VI: /workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Send Message and Wait for Reply.vi</div></summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Front Panel Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/fp_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/fp_2.png"/>
+</td></tr><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Block Diagram Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/bd_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/bd_2.png"/>
+</td></tr></table></details>
+</div>
+<div class="included-attributes">
+<ul class="inclusion-list">
+<li class="checked">Front Panel</li>
+<li class="checked">Front Panel Position/Size</li>
+<li class="checked">Block Diagram Functional</li>
+<li class="checked">Block Diagram Cosmetic</li>
+<li class="checked">VI Attribute</li>
+</ul>
+</div>
+<h2 class="section-header">Detailed Information</h2>
+<details open>
+
+<summary class="difference-heading">1. VI Attribute - Documentation (VI Properties)</summary>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">	description text : changed from "Sends a synchronous message to the CSM and waits for a reply before continuing code execution.
+- If no reply message is received within the timeout, this VI returns a "CSM Timeout Error".
+- If the target module does not exist, this VI returns a "Target Error".
+
+
+> [!NOTE] <b>Synchronous Message</b>
+>
+> A synchronous message is a type of message. After a CSM sends a synchronous message, it pauses state transitions and waits for the callee to complete message processing. Synchronous messages are described via `-@`. A call from one JKISM module to another via a synchronous message is called a synchronous call.
+>
+> <b>Errors occurring at the Caller</b>:
+> - If the input target module is `""`, a `NO Target Error` is generated.
+> - If the input module does not exist, a `Target Error` is generated.
+> - If the input module exists but does not complete processing within the specified time, a `Timeout Error` is generated.
+>
+> <b>Caller waits for return</b>:
+> - If the caller is a CSM module, it stays in the Parse State the Queue++ VI.
+> - If it is an API call, it stays in the calling VI, such as the CSM - Send Message and Wait for Reply VI.
+>
+> <b>Return</b>:
+> - <b>If the caller is a CSM module</b>:
+>   - Normally, it enters the `Response` state to handle the return.
+>   - If an error occurs at the caller, it causes the CSM state machine to enter the `Error Handler` module to handle the error.
+>   - If an error occurs at the callee, this information is still the result of the message. It is handled in the `Response` state and can be obtained from Additional Information.
+> - <b>If it is an API call</b>:
+>   - The Response output is the return.
+>   - Errors occurring at both the caller and callee are merged into the error cluster output.
+
+
+> [!NOTE] <b>CSM Message Target Module Description</b>
+>
+> In Normal Mode, the target module for a CSM message is the specified module name.
+> System-level modules start with a `.` in their name. The target module for a CSM message includes the `.` in the name. For example, if the requested module name is `.System`, the target module for the CSM message is `.System`.
+> In Worker Mode, the target module for a CSM message can only be the overall module name, not the node name. For example, if the requested module name is `Worker#`, the target module for the CSM message is `Worker`.
+> In Chain of Responsibility Mode, the target module for a CSM message can only be the overall module name, not the node name. For example, if the requested module name is `Chain$1`, the target module for the CSM message is `Chain`.
+> In Chain of Responsibility Mode, a message is routed directly based on handling capability and priority (smaller number = higher priority) and is not passed sequentially across nodes.
+
+
+-- <b>Controls</b> --
+- <b>Current Module ("" to Generate an ID)</b>: Name of the current module. If empty, a temporary ID is generated for debugging purposes to identify the location.
+- <b>State</b>: Message string.
+- <b>Arguments ("")</b>: Message arguments.
+- <b>Target Module</b>: Target CSM module name.
+- <b>Response Timeout (-2 Using Global Settings)</b>: Timeout setting for waiting for a reply. The default is 5000 ms.
+
+-- <b>Indicators</b> --
+- <b>Response</b>: Returned response.
+- <b>Source CSM</b>: Name of the CSM module that sourced the returned response. In Worker Mode or Chain of Responsibility Mode, this output returns the name of the node." to "Sends a synchronous message to the CSM and waits for a reply before continuing code execution.
+- If no reply message is received within the timeout, this VI returns a "CSM Timeout Error".
+- If the target module does not exist, this VI returns a "Target Error".
+
+
+> [!NOTE] <b>Synchronous Message</b>
+>
+> A synchronous message is a type of message. After a CSM sends a synchronous message, it pauses state transitions and waits for the callee to complete message processing. Synchronous messages are described via `-@`. A call from one JKISM module to another via a synchronous message is called a synchronous call.
+>
+> <b>Errors occurring at the Caller</b>:
+> - If the input target module is `""`, a `NO Target Error` is generated.
+> - If the input module does not exist, a `Target Error` is generated.
+> - If the input module exists but does not complete processing within the specified time, a `Timeout Error` is generated.
+>
+> <b>Caller waits for return</b>:
+> - If the caller is a CSM module, it stays in the Parse State the Queue++ VI.
+> - If it is an API call, it stays in the calling VI, such as the CSM - Send Message and Wait for Reply VI.
+>
+> <b>Return</b>:
+> - <b>If the caller is a CSM module</b>:
+>   - Normally, it enters the `Response` state to handle the return.
+>   - If an error occurs at the caller, it causes the CSM state machine to enter the `Error Handler` module to handle the error.
+>   - If an error occurs at the callee, this information is still the result of the message. It is handled in the `Response` state and can be obtained from Additional Information.
+> - <b>If it is an API call</b>:
+>   - The Response output is the return.
+>   - Errors occurring at both the caller and callee are merged into the error cluster output.
+
+
+> [!NOTE] <b>CSM Synchronous Message Global Timeout</b>
+>
+> - When performing CSM inter-module communication or using the VI that sends synchronous messages, the default timeout is -2, which uses the globally configured timeout.
+> - The global timeout can be set to other positive values using the CSM - Set TMO of Sync-Reply VI to override the global setting.
+> - The global timeout only applies to synchronous calls. Asynchronous calls are unaffected.
+
+
+> [!NOTE] <b>CSM Message Target Module Description</b>
+>
+> In Normal Mode, the target module for a CSM message is the specified module name.
+> System-level modules start with a `.` in their name. The target module for a CSM message includes the `.` in the name. For example, if the requested module name is `.System`, the target module for the CSM message is `.System`.
+> In Worker Mode, the target module for a CSM message can only be the overall module name, not the node name. For example, if the requested module name is `Worker#`, the target module for the CSM message is `Worker`.
+> In Chain of Responsibility Mode, the target module for a CSM message can only be the overall module name, not the node name. For example, if the requested module name is `Chain$1`, the target module for the CSM message is `Chain`.
+> In Chain of Responsibility Mode, a message is routed directly based on handling capability and priority (smaller number = higher priority) and is not passed sequentially across nodes.
+
+
+-- <b>Controls</b> --
+- <b>Current Module ("" to Generate an ID)</b>: Name of the current module. If empty, a temporary ID is generated for debugging purposes to identify the location.
+- <b>State</b>: Message string.
+- <b>Arguments ("")</b>: Message arguments.
+- <b>Target Module</b>: Target CSM module name.
+- <b>Response Timeout (-2 Using Global Settings)</b>: Timeout setting for waiting for a reply. The default is 5000 ms.
+
+-- <b>Indicators</b> --
+- <b>Response</b>: Returned response.
+- <b>Source CSM</b>: Name of the CSM module that sourced the returned response. In Worker Mode or Chain of Responsibility Mode, this output returns the name of the node."</li>
+</ol>
+</details>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"> <title>LabVIEW VI Comparison Report</title> <link href="index_files/support/style.css" rel="stylesheet"><style id="vidiff-overlay-fix">td.diff-image>div[style*="aspect-ratio"]{aspect-ratio:auto!important;height:auto!important;max-width:100%!important;position:relative!important}td.diff-image>div[style*="aspect-ratio"]>div{height:auto!important}td.diff-image>div[style*="aspect-ratio"]>div>div{position:absolute!important;inset:0!important;height:auto!important}td.diff-image img.difference-image{position:static!important;top:auto!important}</style></head>
+<body>
+<div class="report">
+<h1 class="report-title">LabVIEW VI Comparison Report</h1>
+<p class="generation-time">06:57:42 10/29/2026</p>
+<div class="compared-VIs">
+<details><summary class="difference-heading"><div class="dropdown-left">First VI: /workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Destroy Global Log Queue.vi</div><div class="dropdown-right">Second VI: /workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Destroy Global Log Queue.vi</div></summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Front Panel Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/fp_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/fp_2.png"/>
+</td></tr><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Block Diagram Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/bd_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/bd_2.png"/>
+</td></tr></table></details>
+</div>
+<div class="included-attributes">
+<ul class="inclusion-list">
+<li class="checked">Front Panel</li>
+<li class="checked">Front Panel Position/Size</li>
+<li class="checked">Block Diagram Functional</li>
+<li class="checked">Block Diagram Cosmetic</li>
+<li class="checked">VI Attribute</li>
+</ul>
+</div>
+<h2 class="section-header">Detailed Information</h2>
+<details open>
+
+<summary class="difference-heading">1. Block Diagram objects</summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">/workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Destroy Global Log Queue.vi</td><td class="difference-divider"></td><td class="compared-vi-image-caption">/workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Destroy Global Log Queue.vi</td></tr><tr class="compared-images"><td class="diff-image">
+
+<img class="difference-image" src="index_files/0_0_256_256_1.png" alt="index_files/0_0_256_256_1.png">
+</td><td class="difference-divider"></td><td class="diff-image">
+
+<img class="difference-image" src="index_files/0_0_256_256_2.png" alt="index_files/0_0_256_256_2.png">
+</td></tr></table>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">Front Panel Terminal "Global Log Queue" - refnum kind : changed</li>
+</ol>
+</details>
+<details open>
+
+<summary class="difference-heading">2. Front Panel - Queue Refnum</summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">/workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Destroy Global Log Queue.vi</td><td class="difference-divider"></td><td class="compared-vi-image-caption">/workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/AdvanceAPI/CSM - Destroy Global Log Queue.vi</td></tr><tr class="compared-images"><td class="diff-image">
+
+<img class="difference-image" src="index_files/1_0_1226_1226_1.png" alt="index_files/1_0_1226_1226_1.png">
+</td><td class="difference-divider"></td><td class="diff-image">
+
+<img class="difference-image" src="index_files/1_0_1226_1226_2.png" alt="index_files/1_0_1226_1226_2.png">
+</td></tr></table>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">Queue Refnum "Global Log Queue" - refnum kind : changed</li>
+</ol>
+</details>
+<details open>
+
+<summary class="difference-heading">3. VI Attribute - Documentation (VI Properties)</summary>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">	description text : changed from "Releases the global log queue refnum.
+
+
+> [!NOTE] <b>CSM Global Log Functionality</b>
+>
+> The CSM Global Log functionality is used to view global log change events, serving scenarios such as debugging and monitoring.
+> The following is the information that can be logged:
+> - Module state modifications
+> - Inter-module message communication, including data returns
+> - Module status publishing
+> - Module creation and destruction
+> - Module state registration and unregistration
+> - Error information handled by modules
+> - User-defined events
+>
+> Debugging tools are primarily developed based on the Global Log API. You can develop debugging tools according to your own needs.
+
+
+> [!NOTE] <b>CSM Global Log Acquisition Methods</b>
+>
+> CSM provides two methods for acquiring global logs: Queue and Event. The Queue processing method is recommended because the queue interface is more efficient and offers greater flexibility in selecting log processing schemes based on the number of accumulated logs in the queue.
+
+
+<b>Reference Examples</b>:
+- `4. Advance Examples\Filter From Source(Queue).vi`
+- `4. Advance Examples\Filter From Subscriber(Queue).vi`
+
+-- <b>Controls</b> --
+- <b>Global Log Queue</b>: Global log queue refnum." to "Releases the global log queue refnum.
+
+
+> [!NOTE] <b>CSM Global Log Functionality</b>
+>
+> The CSM Global Log functionality is used to view global log change events, serving scenarios such as debugging and monitoring.
+> The following is the information that can be logged:
+> - Module state modifications
+> - Inter-module message communication, including data returns
+> - Message completion records of asynchronous and synchronous messages, `AsyncMsg Complete` and `SyncMsg Complete`, which carry the response
+> - Module status publishing
+> - Module creation and destruction
+> - Module state registration and unregistration
+> - Error information handled by modules
+> - User-defined events
+>
+> Debugging tools are primarily developed based on the Global Log API. You can develop debugging tools according to your own needs.
+
+
+> [!NOTE] <b>CSM Global Log Acquisition Methods</b>
+>
+> CSM provides two methods for acquiring global logs: Queue and Event. The Queue processing method is recommended because the queue interface is more efficient and offers greater flexibility in selecting log processing schemes based on the number of accumulated logs in the queue.
+
+
+<b>Reference Examples</b>:
+- `4. Advance Examples\Filter From Source(Queue).vi`
+- `4. Advance Examples\Filter From Subscriber(Queue).vi`
+
+-- <b>Controls</b> --
+- <b>Global Log Queue</b>: Global log queue refnum."</li>
+</ol>
+</details>
+</div>
+</body>
+</html>

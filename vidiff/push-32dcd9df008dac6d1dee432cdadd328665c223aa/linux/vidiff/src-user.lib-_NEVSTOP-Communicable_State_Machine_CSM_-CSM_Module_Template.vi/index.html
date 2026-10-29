@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"> <title>LabVIEW VI Comparison Report</title> <link href="index_files/support/style.css" rel="stylesheet"><style id="vidiff-overlay-fix">td.diff-image>div[style*="aspect-ratio"]{aspect-ratio:auto!important;height:auto!important;max-width:100%!important;position:relative!important}td.diff-image>div[style*="aspect-ratio"]>div{height:auto!important}td.diff-image>div[style*="aspect-ratio"]>div>div{position:absolute!important;inset:0!important;height:auto!important}td.diff-image img.difference-image{position:static!important;top:auto!important}</style></head>
+<body>
+<div class="report">
+<h1 class="report-title">LabVIEW VI Comparison Report</h1>
+<p class="generation-time">06:59:26 10/29/2026</p>
+<div class="compared-VIs">
+<details><summary class="difference-heading"><div class="dropdown-left">First VI: /workspace-base/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/CSM Module Template.vi</div><div class="dropdown-right">Second VI: /workspace/src/user.lib/_NEVSTOP/Communicable State Machine(CSM)/CSM Module Template.vi</div></summary>
+<table class="difference"><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Front Panel Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/fp_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/fp_2.png"/>
+</td></tr><tr class="compared-vi-image-captions"><td class="compared-vi-image-caption">Block Diagram Overview</td></tr>
+<tr class="compared-images"><td class="diff-image">
+<img class="difference-image" src="index_files/bd_1.png"/>
+</td><td class="difference-divider"></td><td class="diff-image">
+<img class="difference-image" src="index_files/bd_2.png"/>
+</td></tr></table></details>
+</div>
+<div class="included-attributes">
+<ul class="inclusion-list">
+<li class="checked">Front Panel</li>
+<li class="checked">Front Panel Position/Size</li>
+<li class="checked">Block Diagram Functional</li>
+<li class="checked">Block Diagram Cosmetic</li>
+<li class="checked">VI Attribute</li>
+</ul>
+</div>
+<h2 class="section-header">Detailed Information</h2>
+<details open>
+
+<summary class="difference-heading">1. VI Attribute - Documentation (VI Properties)</summary>
+<ol class="detailed-description-list" type="A">
+<li class="diff-detail">	description text : changed from "A template for creating a CSM module without a user interface. This is the most commonly used CSM template. The template also includes an event response loop used for exiting the module during debugging. Remove this loop after debugging is complete.
+
+
+> [!NOTE] <b>CSM Naming Rules</b>
+>
+> - CSM module name must be unique. Otherwise, CSM enters a `Critical Error` state.
+> - If the input module name is an empty string (""), the system uses a UUID as the module name. Such a module is marked as standalone mode and does not appear in the module list.
+> - Worker Mode Rule: If the input module name ends with `#`, a worker mode node will be instantiated. Multiple worker mode nodes can form a worker mode module.
+> - Chain of Responsibility Mode Rule: If the input module name ends with `$` followed by a number, a chain of responsibility mode node will be instantiated. Multiple chain of responsibility mode nodes can form a chain of responsibility mode module. Smaller numbers mean higher priority, and messages are routed directly to the highest-priority node that can handle them.
+> - System-Level Module Rule: If the input module name starts with `.`, the module is a system-level module. Under default settings, such modules are not listed by the CSM - List Modules VI and are  suitable for instantiating modules that run in the background.
+> - Submodule Rule: `.` is also allowed in a module name to separate the module name into multiple parts. CSM does not have strict rules for submodules. The `.` in the module name only marks the logical relationship between different modules. From an execution perspective, they are considered independent modules. The only difference is that you can obtain a list of logical submodules via the CSM - List Submodules VI.
+
+
+> [!WARNING] <b>Multiple CSMs in a Single VI</b>
+>
+> - It is not recommended to place multiple (>=2) CSMs in a flat layout within a single VI. While this will not cause logical issues in the program, it will prevent the CSM Debug Console from loading all the inner and outer interfaces of the flat CSMs in that VI - only one will be loaded.
+
+
+-- <b>Controls</b> --
+- <b>Name ("" to use UUID)</b>: CSM module name. Refer to <b>CSM Naming Rules</b> for module naming rules." to "A template for creating a CSM module without a user interface. This is the most commonly used CSM template. The template also includes an event response loop used for exiting the module during debugging. Remove this loop after debugging is complete.
+
+
+> [!NOTE] <b>CSM Naming Rules</b>
+>
+> - CSM module name must be unique. Otherwise, CSM enters a `Critical Error` state.
+> - If the input module name is an empty string (""), the system uses a UUID as the module name. Such a module is marked as standalone mode and does not appear in the module list.
+> - Worker Mode Rule: If the input module name ends with `#`, a worker mode node will be instantiated. Multiple worker mode nodes can form a worker mode module.
+> - Chain of Responsibility Mode Rule: If the input module name ends with `$` followed by a number, a chain of responsibility mode node will be instantiated. Multiple chain of responsibility mode nodes can form a chain of responsibility mode module. Smaller numbers mean higher priority, and messages are routed directly to the highest-priority node that can handle them.
+> - System-Level Module Rule: If the input module name starts with `.`, the module is a system-level module. Under default settings, such modules are not listed by the CSM - List Modules VI and are  suitable for instantiating modules that run in the background.
+> - Submodule Rule: `.` is also allowed in a module name to separate the module name into multiple parts. CSM does not have strict rules for submodules. The `.` in the module name only marks the logical relationship between different modules. From an execution perspective, they are considered independent modules. The only difference is that you can obtain a list of logical submodules via the CSM - List Submodules VI.
+
+
+> [!NOTE] <b>CSM Initialize State ("Macro: Initialize")</b>
+>
+> - The default value is `Macro: Initialize`, which is consistent with the JKISM state machine.
+> - This state is used to initialize the state machine of a CSM module. A CSM module will process externally sent messages only after completing this macro state.
+
+
+> [!NOTE] <b>CSM Exit State ("Macro: Exit")</b>
+>
+> - The default value is "Macro: Exit", which is consistent with the JKISM state machine.
+> - This state is used to exit the state machine of a CSM module. After entering this state, a CSM module no longer processes externally sent messages.
+
+
+> [!WARNING] <b>Multiple CSMs in a Single VI</b>
+>
+> - It is not recommended to place multiple (>=2) CSMs in a flat layout within a single VI. While this will not cause logical issues in the program, it will prevent the CSM Debug Console from loading all the inner and outer interfaces of the flat CSMs in that VI - only one will be loaded.
+
+
+-- <b>Controls</b> --
+- <b>Name ("" to use UUID)</b>: CSM module name. Refer to <b>CSM Naming Rules</b> for module naming rules."</li>
+</ol>
+</details>
+</div>
+</body>
+</html>
