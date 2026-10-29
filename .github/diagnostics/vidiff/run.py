@@ -2,6 +2,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 
 
 workspace = Path(os.environ['GITHUB_WORKSPACE'])
@@ -34,8 +35,13 @@ for index, target in enumerate(cases, 1):
     ]
     print(f'Running {mode}: {target}', flush=True)
     with (destination / 'console.log').open('w') as log:
-        result = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT)
-    print((destination / 'console.log').read_text(), flush=True)
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                   text=True, errors='replace')
+        for line in process.stdout:
+            print(line, end='', flush=True)
+            log.write(line)
+            log.flush()
+        status = process.wait()
     with (destination / 'container-changes.txt').open('w') as log:
         subprocess.run(['docker', 'diff', name], stdout=log, stderr=subprocess.STDOUT)
     subprocess.run(['docker', 'rm', '-f', name], check=True)
@@ -43,9 +49,11 @@ for index, target in enumerate(cases, 1):
     html = destination / 'report/index.html'
     reports = len(json.loads(manifest.read_text())['files']) if manifest.exists() else int(
         html.exists() and html.stat().st_size > 0)
-    results.append({'mode': mode, 'case': index, 'exit': result.returncode,
+    results.append({'mode': mode, 'case': index, 'exit': status,
                     'reports': reports, 'target': target})
 (output / 'results.json').write_text(json.dumps(results, indent=2))
 print(json.dumps(results, indent=2))
 with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
     summary.write('```json\n' + json.dumps(results, indent=2) + '\n```\n')
+if mode == 'recovery-full' and any(result['exit'] != 0 for result in results):
+    sys.exit(1)

@@ -17,7 +17,8 @@ ps -eo pid,ppid,stat,rss,etime,args > /out/processes-before.txt
 printf 'MODE=%s\nDISPLAY=%s\nLV_RTE_HEADLESS=%s\n' \
     "$MODE" "${DISPLAY:-}" "${LV_RTE_HEADLESS:-}"
 free -m
-LabVIEWCLI -Help || true
+timeout 15 LabVIEWCLI -Help || true
+pkill -KILL -x labviewprofull || true
 
 if [[ "$MODE" == xvfb-* ]]; then
     Xvfb :99 -screen 0 1920x1080x24 -nolisten tcp > /out/xvfb.log 2>&1 &
