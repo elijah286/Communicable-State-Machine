@@ -1,0 +1,1130 @@
+{
+  "schema": 1,
+  "repo": "elijah286/Communicable-State-Machine",
+  "sha": "8db58d4c48f437ec7845324f263bacf24e5aede6",
+  "revisions": [
+    {
+      "sha": "8db58d4c48f437ec7845324f263bacf24e5aede6",
+      "short": "8db58d4",
+      "message": "Add LabVIEW CI pipeline",
+      "author": "Elijah Kerry",
+      "date": "2026-10-29T06:49:42Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "32dcd9df008dac6d1dee432cdadd328665c223aa",
+      "short": "32dcd9d",
+      "message": "Dev_2026Q3 (#631)",
+      "author": "NEVSTOP",
+      "date": "2026-10-04T12:19:33Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "0258b81ffd18790103273880b70df81c8a3d53eb",
+      "short": "0258b81",
+      "message": "quick fix: lvcsm \u6ca1\u6709\u6b63\u786e\u751f\u6210",
+      "author": "nevstop",
+      "date": "2026-07-30T13:22:17Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "61162b6e3bc7d2786735db286487f9b2d1120a85",
+      "short": "61162b6",
+      "message": "Feat/fix linux os issues (#623)",
+      "author": "NEVSTOP",
+      "date": "2026-07-30T06:58:28Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "69686e4db34af115b7fb14ccb2956f3a69ea35b3",
+      "short": "69686e4",
+      "message": "fix https://github.com/NEVSTOP-LAB/Communicable-State-Machine/actions/runs/29251990167/job/86824291356",
+      "author": "nevstop",
+      "date": "2026-07-14T02:51:01Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "22db573f9748aecbf5afb50ce2a54941c5ca3663",
+      "short": "22db573",
+      "message": "Dev_2026Q2 (#608)",
+      "author": "NEVSTOP",
+      "date": "2026-07-13T12:59:38Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "afe7d4d6886146babb220ca39e25f10ca4022f1c",
+      "short": "afe7d4d",
+      "message": "restructure Syntax.md: split into English and Chinese sections with navigation (#605)",
+      "author": "Copilot",
+      "date": "2026-04-15T02:19:22Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "def2f9d5ed67480a6215ce061786272afccee4fb",
+      "short": "def2f9d",
+      "message": "https://github.com/NEVSTOP-LAB/Communicable-State-Machine/actions/runs/24224382084/job/70774064580#logs",
+      "author": "nevstop",
+      "date": "2026-04-10T12:16:42Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "90b6097f414ade509c3a5a611a2f70667d1c4d16",
+      "short": "90b6097",
+      "message": "Update syntax documentation in Syntax.md",
+      "author": "NEVSTOP",
+      "date": "2026-04-10T03:06:25Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "aea9024aae140dc997d894370356c5dc0efb284f",
+      "short": "aea9024",
+      "message": "Dev_2026Q1 (#594)",
+      "author": "NEVSTOP",
+      "date": "2026-04-10T03:02:51Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "6d1581f7b84ced8fe13668ae280fabdd06ef2687",
+      "short": "6d1581f",
+      "message": "Dev2025Q4 (#536)",
+      "author": "NEVSTOP",
+      "date": "2026-01-26T03:28:30Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "bec192df5c07dc819c583e4508b622e63a024c53",
+      "short": "bec192d",
+      "message": "Dev 202509 (#500)",
+      "author": "NEVSTOP",
+      "date": "2025-09-28T03:34:11Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "73a64aa1be5b3d553ba8e893298a32ec97dcc2ba",
+      "short": "73a64aa",
+      "message": "Dev202508 (#493)",
+      "author": "NEVSTOP",
+      "date": "2025-08-26T05:37:05Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "508e741ebf3562fd226b733cf7eb295fd51720c2",
+      "short": "508e741",
+      "message": "Dev202507 (#480)",
+      "author": "NEVSTOP",
+      "date": "2025-07-30T06:38:36Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "7d423b9024d397299908eb4882f8af818a09caf5",
+      "short": "7d423b9",
+      "message": "Squashed commit of the following:",
+      "author": "NEVSTOP",
+      "date": "2025-07-02T02:25:04Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "23f63f5da0f8058c74381e57cf81cfc2cd04b29f",
+      "short": "23f63f5",
+      "message": "quick fix for CSM - Running Log - DebugTool.vi",
+      "author": "NEVSTOP",
+      "date": "2025-06-01T16:31:21Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "798500819239c6d29dc005c49cb0919212e09f43",
+      "short": "7985008",
+      "message": "Dev202505 (#451)",
+      "author": "NEVSTOP",
+      "date": "2025-05-29T10:11:37Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "3bf082055cdb1693a12ddd59c6cac0f11e9d4713",
+      "short": "3bf0820",
+      "message": "fix poping up VI path",
+      "author": "NEVSTOP",
+      "date": "2025-04-28T15:01:23Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "afc6b9f3ba8d5ecd7fb1e749301b1573b2b1da08",
+      "short": "afc6b9f",
+      "message": "fix bug in CSM - Module Exit Event.vi",
+      "author": "NEVSTOP",
+      "date": "2025-04-28T13:57:49Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "948bd4aeefa509910fb57c3323515a06a2ecf9a0",
+      "short": "948bd4a",
+      "message": "Dev202504 (#434)",
+      "author": "NEVSTOP",
+      "date": "2025-04-28T08:30:48Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "2fb645d9cf36c8ab2925ddbf9dcdbd674a16652d",
+      "short": "2fb645d",
+      "message": "Dev202503 (#397)",
+      "author": "NEVSTOP",
+      "date": "2025-03-29T02:07:57Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "7f789467167ea1eb93dd5225f8cb5f5d86db94ce",
+      "short": "7f78946",
+      "message": "Dev202502 (#376)",
+      "author": "NEVSTOP",
+      "date": "2025-02-27T12:03:27Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "3e3f7a44644278182b4e8fc8fe653c9d3c1046ae",
+      "short": "3e3f7a4",
+      "message": "Dev202501 (#356)",
+      "author": "NEVSTOP",
+      "date": "2025-01-26T09:10:42Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "54d2cb52d6ec9df14ff632a8c2cb3a40444c5a2b",
+      "short": "54d2cb5",
+      "message": "Dev202412 (#346)",
+      "author": "NEVSTOP",
+      "date": "2024-12-30T10:04:23Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "dc0a58ef6cd3ecfb8f6a3dc1971ec3eb0b76d17e",
+      "short": "dc0a58e",
+      "message": "Dev202411-2: [important] Periodic States/Log will automatically be filtered in Template/DebugTools/Examples (#338)",
+      "author": "NEVSTOP",
+      "date": "2024-11-25T13:33:41Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "bc5914f90cdb5d8a2ac1f4dc4dfc78e7e723537e",
+      "short": "bc5914f",
+      "message": "Update README(zh-cn).md",
+      "author": "NEVSTOP",
+      "date": "2024-11-25T10:56:33Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "0745ee8c498b7d1c5b0502adffd8204a71f1cbf0",
+      "short": "0745ee8",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2024-11-25T10:56:18Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "091d190b818d7282251091b9e56bdaebd62e6d7e",
+      "short": "091d190",
+      "message": "Dev202411-1 (#336)",
+      "author": "NEVSTOP",
+      "date": "2024-11-15T09:38:53Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "df3a2e8cf8d4fbee49c2bb92ce64398051f4b47f",
+      "short": "df3a2e8",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2024-11-08T09:50:56Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "8f10155803e080700ba8e709369d4c79f1060a52",
+      "short": "8f10155",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2024-11-08T09:50:19Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "f5bca925cb619555ef6e07b372775a5476cc18b3",
+      "short": "f5bca92",
+      "message": "Dev202410 (#324)",
+      "author": "NEVSTOP",
+      "date": "2024-11-08T05:05:15Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "e0703475e1ece23e0f898ab50e00ea27e3a9297e",
+      "short": "e070347",
+      "message": "update user.lib/_NEVSTOP/Communicable State Machine(CSM)/dir.mnu",
+      "author": "NEVSTOP",
+      "date": "2024-09-28T11:30:22Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "3a7d42844349e7b1009de7c1b3a22193adbe62df",
+      "short": "3a7d428",
+      "message": "Dev202409 (#303)",
+      "author": "NEVSTOP",
+      "date": "2024-09-28T03:40:56Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "0983df08c8571b2f76c517d6a59620b3c5066c61",
+      "short": "0983df0",
+      "message": "Dev202408 (#292)",
+      "author": "NEVSTOP",
+      "date": "2024-08-29T14:03:32Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "0e5c4a94efc22c4cd1b0c235d9a903d8f0d7d1e7",
+      "short": "0e5c4a9",
+      "message": "Dev202407 (#283)",
+      "author": "NEVSTOP",
+      "date": "2024-07-29T14:24:50Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "1d33b0ef0248d0509293e7845cf9fea5caf6e0bc",
+      "short": "1d33b0e",
+      "message": "Dev202406 (#279)",
+      "author": "NEVSTOP",
+      "date": "2024-06-30T14:26:16Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "c544bcb58acb4ebb5a20421d88e89da70573fba3",
+      "short": "c544bcb",
+      "message": "Quick Fix for missing VIs in vi.lib/addons/Communicable State Machine(CSM).mnu",
+      "author": "NEVSTOP",
+      "date": "2024-05-31T02:53:47Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "50e88a18e11b3205fa223458bf789a8be56152bf",
+      "short": "50e88a1",
+      "message": "Dev202405 (#267)",
+      "author": "NEVSTOP",
+      "date": "2024-05-30T15:56:42Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "8510dce51f16dd9af57a6059555d90ce0a573ae2",
+      "short": "8510dce",
+      "message": "Dev202404 (#263)",
+      "author": "NEVSTOP",
+      "date": "2024-04-30T03:11:47Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "4128ecf3b7200a8248edd481d0d35c57e26fefdc",
+      "short": "4128ecf",
+      "message": "Dev202403 (#261)",
+      "author": "NEVSTOP",
+      "date": "2024-03-29T05:42:55Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "8f135923ac69bdb2db32042746d9db8d593f2fa6",
+      "short": "8f13592",
+      "message": "Dev20240301 (#255)",
+      "author": "NEVSTOP",
+      "date": "2024-03-03T15:16:41Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "7ba2b5c552e85ad60a269416de942c88dbd5b828",
+      "short": "7ba2b5c",
+      "message": "[add] #252 add a toolbar entry to launcher CSM tools (#253)",
+      "author": "NEVSTOP",
+      "date": "2024-02-22T14:47:50Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "3e61be124b1b244e6a0af1cc3d4e5b8360bb85e5",
+      "short": "3e61be1",
+      "message": "[add] #251 add \"CSM - Filter Messages to Non-Existing Modules.vi\"",
+      "author": "NEVSTOP",
+      "date": "2024-02-19T03:42:38Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "4fd6a0f03e8213f7b4d282afaf9ea7d6721b2be7",
+      "short": "4fd6a0f",
+      "message": "Dev on 20240103 (#248)",
+      "author": "NEVSTOP",
+      "date": "2024-02-03T13:54:00Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "dcdebfee5fd562abc601f074fc0bddf0c5beabe1",
+      "short": "dcdebfe",
+      "message": "bugfix-20240125 (#243)",
+      "author": "NEVSTOP",
+      "date": "2024-01-28T11:23:12Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "34205e97c426242e26e2ba0e1e3fa31317bec351",
+      "short": "34205e9",
+      "message": "Create CONTRIBUTING.md",
+      "author": "NEVSTOP",
+      "date": "2024-01-19T15:08:38Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "ae7c2bc08d5df2a82192e1889644f9db6b53858f",
+      "short": "ae7c2bc",
+      "message": "[fix] minor fix #237",
+      "author": "NEVSTOP",
+      "date": "2024-01-17T03:12:12Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "67f4e8e361f30df07c2c70db53a190a2c0290e01",
+      "short": "67f4e8e",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2024-01-16T01:36:52Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "69acc36ae71bbbe78e55b1570514ea690f6022c6",
+      "short": "69acc36",
+      "message": "Dev20240109 (#233)",
+      "author": "NEVSTOP",
+      "date": "2024-01-09T14:00:26Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "4d93ec6b9088140ae8c6f0b9917fd27ffdf8cb4b",
+      "short": "4d93ec6",
+      "message": "Add more message utility vi (#231)",
+      "author": "NEVSTOP",
+      "date": "2023-12-29T09:28:54Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "e8c7617bf2b736c59e9b4ab7318caddb9ba18153",
+      "short": "e8c7617",
+      "message": "Update README(CN).md",
+      "author": "NEVSTOP",
+      "date": "2023-12-27T09:35:51Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "35160e3d42d645e69d111ac633de4241a50634f6",
+      "short": "35160e3",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2023-12-27T09:32:16Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "1a72b9d1cd38737e3d0258178137b2ecd8a59a3a",
+      "short": "1a72b9d",
+      "message": "documentation-wiki-update (#230)",
+      "author": "NEVSTOP",
+      "date": "2023-12-27T09:30:42Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "828565ec1ebbdbcbfeac81e6199153d6ed6bbbe0",
+      "short": "828565e",
+      "message": "228 pre action script relative path (#229)",
+      "author": "NEVSTOP",
+      "date": "2023-12-18T05:50:56Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "ad0b42dce7ef6e71908888cc7d3f0b785f444647",
+      "short": "ad0b42d",
+      "message": "226 change tick count change flag to random change flag (#227)",
+      "author": "NEVSTOP",
+      "date": "2023-12-15T13:34:59Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "bb067e44571f8ec8c7dadc69bb555c69a8cba212",
+      "short": "bb067e4",
+      "message": "Use Random Flag instead of UUID Flag, which is much more fast #225",
+      "author": "NEVSTOP",
+      "date": "2023-12-11T14:38:37Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "e14033db3dc82e49ca93d6d2d029f85c416c9ef6",
+      "short": "e14033d",
+      "message": "Minor change 20231209 (#222)",
+      "author": "NEVSTOP",
+      "date": "2023-12-10T04:36:45Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "7eb2826239ead106aeebbcb616d2f7e17401d833",
+      "short": "7eb2826",
+      "message": "201-quickbug-fix-and-update (#213)",
+      "author": "NEVSTOP",
+      "date": "2023-12-08T07:57:53Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "0d64ae3121d478003c2ce6fb08ab5f0dc4c93a0f",
+      "short": "0d64ae3",
+      "message": "197-core-bug-fix (#206)",
+      "author": "NEVSTOP",
+      "date": "2023-12-04T01:38:53Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "47247ba48163471457d51e9ada1649fd3afaf582",
+      "short": "47247ba",
+      "message": "196-worker-modechain-mode-statusupdate-not-trigger-action (#204)",
+      "author": "NEVSTOP",
+      "date": "2023-12-03T04:32:49Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "02a32c6d1ad126665f01927aeaa18091f9122877",
+      "short": "02a32c6",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2023-12-01T01:55:36Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "41baa4f6bcd1c6aeb6777f56bd22ef187b9e3bc7",
+      "short": "41baa4f",
+      "message": "wiki-Update-guideline (#200)",
+      "author": "NEVSTOP",
+      "date": "2023-12-01T01:50:59Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "76ada57b67cbe9c91cba507b938b18d839b2c8a8",
+      "short": "76ada57",
+      "message": "fix #194",
+      "author": "NEVSTOP",
+      "date": "2023-11-22T12:34:28Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "867407020be3575b6005968a033c9a2ae3d28b34",
+      "short": "8674070",
+      "message": "List API \u9ed8\u8ba4\u53ea\u663e\u793a CSM/Agent/Chain #193",
+      "author": "NEVSTOP",
+      "date": "2023-11-16T14:21:43Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "5e5890988140d90cc71439ffd73087bb03544a52",
+      "short": "5e58909",
+      "message": "144-build-in-chain-of-responsibility-pattern-support (#189)",
+      "author": "NEVSTOP",
+      "date": "2023-11-16T02:16:40Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "801288393d7de9fbd031b843a6f1827e679a6c6d",
+      "short": "8012883",
+      "message": "[imporve] #140 Improve CSM - Send Message and Wait for Reply.vi and CSM - Post Message.vi (#188)",
+      "author": "NEVSTOP",
+      "date": "2023-11-13T04:56:30Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "201f03d12df3ee84762b73ac1ed936513b4123ea",
+      "short": "201f03d",
+      "message": "Response/Async Response carry the Error information from target CSM module (#187)",
+      "author": "NEVSTOP",
+      "date": "2023-11-12T15:33:40Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "85675b8fd7b8472076d0522cdb611297f8b624e1",
+      "short": "85675b8",
+      "message": "[add] add CSM - Break Down Multiple States String.vi (#185)",
+      "author": "NEVSTOP",
+      "date": "2023-11-06T03:29:10Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "932aaea3a4a7f0f02143db5afb5e40b25d880419",
+      "short": "932aaea",
+      "message": " 173-PriorityQueue (#184)",
+      "author": "NEVSTOP",
+      "date": "2023-11-04T12:52:34Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "683984af6fe92ba39733cdc79a879109f5059871",
+      "short": "683984a",
+      "message": "180-documentation-palette (#181)",
+      "author": "NEVSTOP",
+      "date": "2023-10-30T13:34:28Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "cbc62b993d3512d31a17d7f79fa65a67003297df",
+      "short": "cbc62b9",
+      "message": "169 response with arguments (#176)",
+      "author": "NEVSTOP",
+      "date": "2023-10-27T08:02:01Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "49fea0ae8f452a349c18cd5d76b77a581d941901",
+      "short": "49fea0a",
+      "message": "171-template-update (#175)",
+      "author": "NEVSTOP",
+      "date": "2023-10-26T09:34:45Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "a60034b4b2af5121b6b61f0b98302dc539019f8a",
+      "short": "a60034b",
+      "message": "164 bug fix 20231024 (#166)",
+      "author": "NEVSTOP",
+      "date": "2023-10-24T15:22:57Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "0686780a0b68ec249515c938260dca3ec21f93c4",
+      "short": "0686780",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2023-10-20T14:11:31Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "27c3be26fa15d06cd649ae2be2bf5a8740dc2f20",
+      "short": "27c3be2",
+      "message": " fix_refreshing_templates_xnode  (#162)",
+      "author": "NEVSTOP",
+      "date": "2023-10-20T05:49:21Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "3e7f3970a6feb252c9de97fe7d4ec561f0a29ea2",
+      "short": "3e7f397",
+      "message": "add license [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+      "author": "NEVSTOP",
+      "date": "2023-10-18T14:20:20Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "44b6edd02f5cc1c866c54f05a66d2a24b1d87b3a",
+      "short": "44b6edd",
+      "message": "Create LICENSE",
+      "author": "NEVSTOP",
+      "date": "2023-10-17T13:17:39Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "76f818e8c10d5c19f1d86adba842fa0d46c1cabc",
+      "short": "76f818e",
+      "message": "Improving debug tools (#160)",
+      "author": "NEVSTOP",
+      "date": "2023-10-11T01:45:37Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "2e5bccf876497e83ca44245f0e88631623241eac",
+      "short": "2e5bccf",
+      "message": "156-create-shortcut-to-launcher-debugtool-for-csm-under-tools-menus (#159)",
+      "author": "NEVSTOP",
+      "date": "2023-10-08T15:24:59Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "2baa8bcfb4d7ba82b0a84b722a1d57b50eb21ca4",
+      "short": "2baa8bc",
+      "message": "153 Connect HexStr Data Errors in templates (#155)",
+      "author": "NEVSTOP",
+      "date": "2023-10-08T12:26:15Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "30eafd1541fbc2d56de0f893eb79af3397024ab0",
+      "short": "30eafd1",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2023-10-06T14:52:08Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "882f93302959a0522c6ee074978e771a8683eb7e",
+      "short": "882f933",
+      "message": "150 fix description in vipmio (#152)",
+      "author": "NEVSTOP",
+      "date": "2023-10-06T14:47:48Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "b8deaa1291ff132ec568eb3f58bf376bb59e61ff",
+      "short": "b8deaa1",
+      "message": "Update vipm badge",
+      "author": "NEVSTOP",
+      "date": "2023-10-03T14:27:09Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "a9ada280143392dd712daff2ec76701fbb209c2d",
+      "short": "a9ada28",
+      "message": "update package description",
+      "author": "NEVSTOP",
+      "date": "2023-10-02T13:54:32Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "dd587ea5aacbbeff45353ddee69cdc77aaa0ba45",
+      "short": "dd587ea",
+      "message": "Change library name (#149)",
+      "author": "NEVSTOP",
+      "date": "2023-10-02T13:29:48Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "ebb011b4e74840a8a557d530132ada93e806167d",
+      "short": "ebb011b",
+      "message": "add badge",
+      "author": "NEVSTOP",
+      "date": "2023-09-27T08:57:58Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "b3e090b6fb641157c85aae23c40db5b19c0d0904",
+      "short": "b3e090b",
+      "message": "Plan to publish to vipm io (#147)",
+      "author": "NEVSTOP",
+      "date": "2023-09-27T08:03:38Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "73c74ba5980a2fcc380cb5045946607831f1f6c6",
+      "short": "73c74ba",
+      "message": "Add log content (#146)",
+      "author": "NEVSTOP",
+      "date": "2023-09-23T03:01:00Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "73b7057f993a6970a16e67fd7527be3954ad01b9",
+      "short": "73b7057",
+      "message": "update_example_and_doc (#139)",
+      "author": "NEVSTOP",
+      "date": "2023-09-21T15:49:16Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "a43e492fdae885ecf8ca19f795e23dbc02827426",
+      "short": "a43e492",
+      "message": "Update README.md",
+      "author": "NEVSTOP",
+      "date": "2023-09-07T08:30:17Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "fefcc0e94ceaa3bf4e7aa2db0ad6dca9719c6313",
+      "short": "fefcc0e",
+      "message": "documentation_for_release (#136)",
+      "author": "NEVSTOP",
+      "date": "2023-09-01T09:27:37Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "73b961dd42763fc82110b61deab2472bf48193be",
+      "short": "73b961d",
+      "message": "130-insert-arguments-api (#133)",
+      "author": "NEVSTOP",
+      "date": "2023-08-30T09:54:10Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "44a043877667d04ca1a7e87ef9050b555e238f17",
+      "short": "44a0438",
+      "message": "117-documentation-update (#126)",
+      "author": "NEVSTOP",
+      "date": "2023-08-28T13:42:03Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "3d9b56f57a9cd082a015b03c5bee18f320eef3e3",
+      "short": "3d9b56f",
+      "message": "119-potential-bug-fix-and-feature (#123)",
+      "author": "NEVSTOP",
+      "date": "2023-08-21T13:19:34Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "692ba9192b4b61f794c14f16fa274bada7cc110d",
+      "short": "692ba91",
+      "message": "109 post message no response mode (#116)",
+      "author": "NEVSTOP",
+      "date": "2023-08-20T14:07:34Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "dc3d9ea15a69543768d597ed9bb341c4973aa6e6",
+      "short": "dc3d9ea",
+      "message": "113-internal-potential-bug-precaution (#115)",
+      "author": "NEVSTOP",
+      "date": "2023-08-19T15:28:52Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "e57fbc9cde2a4bedecc67b8af0f1b5469e8401e7",
+      "short": "e57fbc9",
+      "message": "quick fix: #104",
+      "author": "NEVSTOP",
+      "date": "2023-08-10T14:37:23Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "4501592d30acd393f53e0407b13c350c47429e6f",
+      "short": "4501592",
+      "message": "104-framework-for-addon  (#105)",
+      "author": "NEVSTOP",
+      "date": "2023-08-10T14:08:36Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "d2a8e6d350ce3c508ef75638e1b93ef7445d58d6",
+      "short": "d2a8e6d",
+      "message": "17 match express pattern node stop making the vi inline need benchmark and improve the performance (#102)",
+      "author": "NEVSTOP",
+      "date": "2023-08-10T01:40:06Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "f6d750cd652342af8d3befa0f890057b11ead1a4",
+      "short": "f6d750c",
+      "message": "91 postsend multi message bug (#101)",
+      "author": "NEVSTOP",
+      "date": "2023-08-09T14:13:32Z",
+      "project": true,
+      "dep_only": false
+    }
+  ],
+  "config": {
+    "use": "",
+    "actions": {},
+    "vipc": [],
+    "dragon": [],
+    "hasVipcList": false,
+    "hasDragonList": false
+  },
+  "vipc": [
+    {
+      "path": ".github/labview/vipm/ci-tooling.vipc",
+      "role": "core",
+      "capability": "",
+      "tooling": true,
+      "configured": true,
+      "monitored": true,
+      "monitorOn": [
+        "windows",
+        "linux"
+      ],
+      "locked": true,
+      "packages": [
+        "astemes_lib_lunit-2.0.13.6",
+        "astemes_lib_lunit_cli-1.6.1.23",
+        "astemes_lib_lunit_coverage_analysis_add_on-1.0.0.2",
+        "astemes_lib_lunit_global_fixture_add_on-1.0.5.4",
+        "astemes_lib_lunit_parameterized_add_on-1.1.10.8",
+        "astemes_lib_lunit_test_inheritance_add_on-1.0.5.4",
+        "dataflow_g_lib_g_image-0.5.0.1",
+        "felipefoz_lib_lv_rainbow_terminal-1.1.1.5",
+        "jki_lib_caraya-1.4.4.148",
+        "jki_lib_state_machine-2024.0.3.23",
+        "jki_rsc_toolkits_palette-1.1-1",
+        "labview_open_source_lib_epoch_datetime-1.3.0.8",
+        "labview_open_source_project_lib_labview_open_source_palette-1.0.2.7",
+        "labview_open_source_project_lib_openuri-1.4.0.13",
+        "lvos_lib_caraya_cli_extension-2.0.0.7",
+        "ni_lib_junit_results_api-1.0.1.6",
+        "ni_lib_simple_xml-1.0.0.4",
+        "ni_lib_utf_junit_report-1.0.1.43",
+        "oglib_array-6.0.1.20",
+        "oglib_error-6.0.0.26",
+        "oglib_file-6.0.2.28",
+        "oglib_lvdata-6.0.0.45",
+        "oglib_string-6.0.2.35",
+        "pnr_lib_caraya_junit_for_azure_pipelines-1.2.0.11",
+        "pnr_lib_junit_xml-1.0.0.4",
+        "sas_workshops_lib_lunit_for_g_cli-1.2.1.85",
+        "wiresmith_technology_lib_g_cli-3.0.1.98"
+      ],
+      "error": ""
+    }
+  ],
+  "nipm": [
+    {
+      "name": "LabVIEW",
+      "source": "NI Package Manager",
+      "labview": true,
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "LabVIEW runtime and development packages from the NI feeds."
+    },
+    {
+      "name": "VI Analyzer support",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-viawin-labview-support"
+        ],
+        "linux": [
+          "ni-vialin-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "details": "NI VI Analyzer support package used by the analyzer runners."
+    },
+    {
+      "name": "NI Unit Test Framework",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-utf-labview-support"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI UTF support package used by the Windows unit-test runner."
+    },
+    {
+      "name": "JKI Dragon",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "jki-dragon"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "JKI Dragon dependency-management tooling installed from the LabVIEW 2026 NI Package Manager feed."
+    },
+    {
+      "name": "VI Package Manager",
+      "source": "NI Package Manager",
+      "packages": {
+        "windows": [
+          "ni-vipm"
+        ]
+      },
+      "platforms": [
+        "windows"
+      ],
+      "details": "NI-published Windows VIPM package that enables VIPC application during worker builds. Linux installs VIPM from the native Debian package during its worker build."
+    }
+  ],
+  "dragon": {
+    "available": false,
+    "column": "windows",
+    "ready": false,
+    "health": "",
+    "manifest_version": "",
+    "files": [],
+    "install_set": [],
+    "conflicts": []
+  },
+  "system": [
+    {
+      "name": "VI Browser 2.0 toimages runner",
+      "source": "Repository Go code",
+      "path": ".github/labview/toimages/main.go",
+      "details": "Batch runner compiled from repo Go source; Linux uses the toimages GHCR image and Windows builds runner.exe in the workflow.",
+      "platforms": {
+        "windows": {
+          "present": true,
+          "label": "workflow-built"
+        },
+        "linux": {
+          "present": true,
+          "label": "toimages image"
+        }
+      }
+    },
+    {
+      "name": "lvctl render engine",
+      "source": "Repository Go code + embedded VIs",
+      "path": ".github/labview/toimages/_ni/labview/lvctl",
+      "details": "Renderer used by VI Browser 2.0 to drive LabVIEW and emit position-aware frame JSON.",
+      "platforms": {
+        "windows": {
+          "present": true,
+          "label": "workflow-built"
+        },
+        "linux": {
+          "present": true,
+          "label": "toimages image"
+        }
+      }
+    }
+  ],
+  "columns": [
+    {
+      "key": "windows",
+      "label": "Windows",
+      "platform": "windows",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": true,
+      "packages": [
+        "astemes_lib_lunit-2.0.13.6",
+        "astemes_lib_lunit_cli-1.6.1.23",
+        "astemes_lib_lunit_coverage_analysis_add_on-1.0.0.2",
+        "astemes_lib_lunit_global_fixture_add_on-1.0.5.4",
+        "astemes_lib_lunit_parameterized_add_on-1.1.10.8",
+        "astemes_lib_lunit_test_inheritance_add_on-1.0.5.4",
+        "dataflow_g_lib_g_image-0.5.0.1",
+        "felipefoz_lib_lv_rainbow_terminal-1.1.1.5",
+        "jki_lib_caraya-1.4.4.148",
+        "jki_lib_state_machine-2024.0.3.23",
+        "jki_rsc_toolkits_palette-1.1-1",
+        "labview_open_source_lib_epoch_datetime-1.3.0.8",
+        "labview_open_source_project_lib_labview_open_source_palette-1.0.2.7",
+        "labview_open_source_project_lib_openuri-1.4.0.13",
+        "lvos_lib_caraya_cli_extension-2.0.0.7",
+        "ni_lib_junit_results_api-1.0.1.6",
+        "ni_lib_simple_xml-1.0.0.4",
+        "ni_lib_utf_junit_report-1.0.1.43",
+        "oglib_array-6.0.1.20",
+        "oglib_error-6.0.0.26",
+        "oglib_file-6.0.2.28",
+        "oglib_lvdata-6.0.0.45",
+        "oglib_string-6.0.2.35",
+        "pnr_lib_caraya_junit_for_azure_pipelines-1.2.0.11",
+        "pnr_lib_junit_xml-1.0.0.4",
+        "sas_workshops_lib_lunit_for_g_cli-1.2.1.85",
+        "wiresmith_technology_lib_g_cli-3.0.1.98"
+      ],
+      "failed_packages": [],
+      "nipkg_ready": true,
+      "nipkg_packages": [],
+      "labview_version": "2026",
+      "version": "win-982773c5fc86"
+    },
+    {
+      "key": "linux",
+      "label": "Linux",
+      "platform": "linux",
+      "defaultTag": "latest",
+      "tag": "latest",
+      "ready": true,
+      "packages": [],
+      "failed_packages": [],
+      "nipkg_ready": true,
+      "nipkg_packages": [],
+      "labview_version": "2026",
+      "version": "linux-4ce478ba9bb6"
+    }
+  ]
+}
