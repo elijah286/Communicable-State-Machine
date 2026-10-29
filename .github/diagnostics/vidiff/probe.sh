@@ -17,7 +17,7 @@ ps -eo pid,ppid,stat,rss,etime,args > /out/processes-before.txt
 printf 'MODE=%s\nDISPLAY=%s\nLV_RTE_HEADLESS=%s\n' \
     "$MODE" "${DISPLAY:-}" "${LV_RTE_HEADLESS:-}"
 free -m
-timeout 15 LabVIEWCLI -Help || true
+timeout 20 LabVIEWCLI -OperationName CreateComparisonReport -Help -Headless || true
 pkill -KILL -x labviewprofull || true
 
 if [[ "$MODE" == xvfb-* ]]; then
@@ -35,7 +35,12 @@ fi
 mkdir -p /out/report
 labview_exe=$(find /usr/local/natinst -name labviewprofull | head -1)
 report_type=html
-if [ "$MODE" = xml ] || [ "$MODE" = text ]; then report_type="$MODE"; fi
+report_path=/out/report/index.html
+case "$MODE" in
+    HTMLSingleFile) report_type=HTMLSingleFile ;;
+    PlainText) report_type=PlainText; report_path=/out/report/report.txt ;;
+    XML) report_type=XML; report_path=/out/report/report.xml ;;
+esac
 headless=(-Headless)
 if [ "$MODE" = xvfb-gui ]; then
     unset LV_RTE_HEADLESS
@@ -44,8 +49,8 @@ fi
 timeout 180 LabVIEWCLI -OperationName CreateComparisonReport \
     -LabVIEWPath "$labview_exe" -VI1 "/workspace-base/$CHANGED_FILES" \
     -VI2 "/workspace/$CHANGED_FILES" -ReportType "$report_type" \
-    -ReportPath /out/report/index.html -LogToConsole TRUE "${headless[@]}"
+    -ReportPath "$report_path" -LogToConsole TRUE "${headless[@]}"
 status=$?
 printf 'CLI exit=%s; HTML bytes=' "$status"
-wc -c /out/report/index.html || true
+wc -c "$report_path" || true
 exit "$status"
