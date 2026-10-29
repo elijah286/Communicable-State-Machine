@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        mode: [headless, xvfb-headless, xvfb-gui, recovery-full]
+        mode: [headless, xml, text]
     steps:
       - uses: actions/checkout@v5
         with:

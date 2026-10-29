@@ -5,7 +5,7 @@ ulimit -c 0
 capture() {
     ps -eo pid,ppid,stat,rss,etime,args > /out/processes-after.txt
     find /tmp /root/.local/share/natinst /root/Documents -type f \
-        \( -iname '*.log' -o -iname '*lvfailure*' \) -size -10240k -print \
+        \( -iname '*.log' -o -iname '*lvfailure*' -o -iname '*log*.txt' -o -iname '*cur.txt' \) -size -10240k -print \
         2>/dev/null | while IFS= read -r path; do
             mkdir -p "/out/native-logs$(dirname "$path")"
             cp "$path" "/out/native-logs${path}" 2>/dev/null || true
@@ -34,6 +34,8 @@ fi
 
 mkdir -p /out/report
 labview_exe=$(find /usr/local/natinst -name labviewprofull | head -1)
+report_type=html
+if [ "$MODE" = xml ] || [ "$MODE" = text ]; then report_type="$MODE"; fi
 headless=(-Headless)
 if [ "$MODE" = xvfb-gui ]; then
     unset LV_RTE_HEADLESS
@@ -41,7 +43,7 @@ if [ "$MODE" = xvfb-gui ]; then
 fi
 timeout 180 LabVIEWCLI -OperationName CreateComparisonReport \
     -LabVIEWPath "$labview_exe" -VI1 "/workspace-base/$CHANGED_FILES" \
-    -VI2 "/workspace/$CHANGED_FILES" -ReportType html \
+    -VI2 "/workspace/$CHANGED_FILES" -ReportType "$report_type" \
     -ReportPath /out/report/index.html -LogToConsole TRUE "${headless[@]}"
 status=$?
 printf 'CLI exit=%s; HTML bytes=' "$status"
