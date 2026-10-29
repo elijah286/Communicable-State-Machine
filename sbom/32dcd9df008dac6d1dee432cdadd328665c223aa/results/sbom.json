@@ -1,0 +1,134 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "pkg:nipkg/ni-labview-2026-coreother@26.3.0.49792-0%2Bf640",
+      "description": "This is an infrastructure package for NI Software.",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.ni.com"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "d92722a91b2fa4fb973ea7f06c20849f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4a7f8fe3e82fda663fc4dc767bae600164be42fdf63a2bc3c24e6d339b0e5ec6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "NI Software License Agreement for Released Products"
+          }
+        }
+      ],
+      "name": "ni-labview-2026-coreother",
+      "properties": [
+        {
+          "name": "vipm:display-name",
+          "value": "NI LabVIEW (64-bit) Core Files"
+        },
+        {
+          "name": "vipm:display-version",
+          "value": "2026 Q3"
+        }
+      ],
+      "purl": "pkg:nipkg/ni-labview-2026-coreother@26.3.0.49792-0%2Bf640",
+      "supplier": {
+        "contact": [
+          {
+            "email": "support@ni.com"
+          }
+        ],
+        "name": "National Instruments"
+      },
+      "type": "library",
+      "version": "26.3.0.49792-0+f640"
+    },
+    {
+      "bom-ref": "pkg:nipkg/ni-labview-2026-vilib@26.3.0.49792-0%2Bf640",
+      "description": "This is an infrastructure package for NI Software.",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.ni.com"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "246ec18df75eb2d1bf37435e8fd426d5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f67a2aeeb33a66e2bdb9446fbf5b4060e911bb90750e6aef1167eb47eec64b06"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "NI Software License Agreement for Released Products"
+          }
+        }
+      ],
+      "name": "ni-labview-2026-vilib",
+      "properties": [
+        {
+          "name": "vipm:display-name",
+          "value": "NI LabVIEW (64-bit) VI Library"
+        },
+        {
+          "name": "vipm:display-version",
+          "value": "2026 Q3"
+        }
+      ],
+      "purl": "pkg:nipkg/ni-labview-2026-vilib@26.3.0.49792-0%2Bf640",
+      "supplier": {
+        "contact": [
+          {
+            "email": "support@ni.com"
+          }
+        ],
+        "name": "National Instruments"
+      },
+      "type": "library",
+      "version": "26.3.0.49792-0+f640"
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [
+        "pkg:nipkg/ni-labview-2026-coreother@26.3.0.49792-0%2Bf640",
+        "pkg:nipkg/ni-labview-2026-vilib@26.3.0.49792-0%2Bf640"
+      ],
+      "ref": "pkg:vipm/Communicable-State-Machine-CSM-"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "pkg:vipm/Communicable-State-Machine-CSM-",
+      "name": "Communicable State Machine(CSM)",
+      "type": "application"
+    },
+    "timestamp": "2026-10-29T07:10:07.055Z",
+    "tools": {
+      "components": [
+        {
+          "name": "vipm-cli",
+          "publisher": "JKI",
+          "type": "application",
+          "version": "2026.3.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:65f88b1a-6fce-4250-ac9d-616d5bed6fe7",
+  "specVersion": "1.5",
+  "version": 1
+}

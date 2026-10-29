@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "sha": "32dcd9df008dac6d1dee432cdadd328665c223aa",
+  "short": "32dcd9d",
+  "platform": "windows",
+  "repo": "elijah286/Communicable-State-Machine",
+  "pages_url": "https://elijah286.github.io/Communicable-State-Machine",
+  "dash_url": "https://elijah286.github.io/Communicable-State-Machine/",
+  "labview_version": "2026",
+  "commit": {
+   "message": "Dev_2026Q3 (#631)",
+   "author": "NEVSTOP",
+   "date": "2026-10-04T20:19:33+08:00"
+  },
+  "generated_utc": "2026-10-29 07:10 UTC",
+  "spdx_version": "CycloneDX 1.5",
+  "created": ""
+ },
+ "summary": {
+  "total_packages": 2
+ },
+ "platforms": [
+  {
+   "id": "windows",
+   "url": null
+  },
+  {
+   "id": "linux",
+   "url": null
+  }
+ ],
+ "packages": [
+  {
+   "name": "ni-labview-2026-coreother",
+   "version": "26.3.0.49792-0+f640",
+   "vendor": "National Instruments"
+  },
+  {
+   "name": "ni-labview-2026-vilib",
+   "version": "26.3.0.49792-0+f640",
+   "vendor": "National Instruments"
+  }
+ ],
+ "tooling": {
+  "missing": []
+ }
+}
