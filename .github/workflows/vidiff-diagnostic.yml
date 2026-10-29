@@ -1,0 +1,57 @@
+name: VIDiff Native Failure Diagnostic
+
+on:
+  push:
+    branches: [diagnostic/vidiff-40832122232]
+    paths:
+      - '.github/workflows/vidiff-diagnostic.yml'
+      - '.github/diagnostics/vidiff/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: read
+
+env:
+  IMAGE: ghcr.io/elijah286/communicable-state-machine-labview@sha256:5f29fff95ef4c8bef793a0d571b7fb40e0c5a5e9807532a785c801acb0e75226
+  BASE_SHA: 0258b81ffd18790103273880b70df81c8a3d53eb
+  HEAD_SHA: 32dcd9df008dac6d1dee432cdadd328665c223aa
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [headless, xvfb-headless, xvfb-gui, recovery-full]
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: tooling
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.HEAD_SHA }}
+          path: head
+          fetch-depth: 0
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BASE_SHA }}
+          path: base
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pull the original worker image
+        run: docker pull "$IMAGE"
+      - name: Reproduce with diagnostic capture
+        env:
+          MODE: ${{ matrix.mode }}
+        run: python3 tooling/.github/diagnostics/vidiff/run.py
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: vidiff-diagnostic-${{ matrix.mode }}
+          path: diagnostic-output/
+          retention-days: 7
